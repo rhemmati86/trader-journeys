@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>اتصال به Supabase | سفرهای یک تریدر</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .setup-wrap{max-width:760px;margin:80px auto;padding:28px}
+    .setup-card{background:rgba(16,29,48,.92);border:1px solid rgba(255,255,255,.10);border-radius:24px;padding:32px;box-shadow:0 20px 60px rgba(0,0,0,.22)}
+    .setup-card h1{margin:0 0 12px;font-size:38px}
+    .setup-card p{color:#a9b8cf;margin:8px 0 20px}
+    label{display:block;font-weight:800;margin:22px 0 8px}
+    input{width:100%;padding:14px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:#0b1626;color:#eff5ff;font:inherit}
+    .urlbox{padding:14px 16px;border-radius:14px;background:#0b1626;color:#58d6b0;word-break:break-all;border:1px solid rgba(255,255,255,.08)}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    button,a.btn{border:0;border-radius:14px;padding:13px 18px;font:inherit;font-weight:800;cursor:pointer;text-decoration:none}
+    .primary{background:#58d6b0;color:#06130f}.secondary{background:rgba(124,182,255,.12);color:#eff5ff;border:1px solid rgba(124,182,255,.24)!important}
+    .status{margin-top:20px;padding:14px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.08);color:#a9b8cf;white-space:pre-wrap}
+    .warning{margin-top:18px;padding:14px 16px;border-radius:14px;background:rgba(255,180,76,.08);border:1px solid rgba(255,180,76,.18);color:#e9c998;font-size:14px}
+    @media(max-width:600px){.setup-wrap{margin:30px auto;padding:14px}.setup-card{padding:22px}.setup-card h1{font-size:30px}.actions>*{width:100%;text-align:center}}
+  </style>
+</head>
+<body>
+  <div class="setup-wrap">
+    <div class="setup-card">
+      <div class="eyebrow">SUPABASE CONNECTION</div>
+      <h1>اتصال «سفرهای یک تریدر»</h1>
+      <p>آدرس پروژه از قبل تنظیم شده است. فقط Publishable Key پروژه خودت را از Supabase اینجا وارد کن.</p>
+
+      <label>Project URL</label>
+      <div class="urlbox">https://nrwugflmgrrfjawtfpsi.supabase.co</div>
+
+      <label for="key">Publishable Key</label>
+      <input id="key" type="password" autocomplete="off" placeholder="sb_publishable_...">
+
+      <div class="actions">
+        <button class="primary" id="save">ذخیره و اتصال</button>
+        <button class="secondary" id="clear">پاک کردن کلید ذخیره‌شده</button>
+        <a class="btn secondary" href="index.html">بازگشت به سایت</a>
+      </div>
+
+      <div class="status" id="status">وضعیت: در حالت نمایشی محلی</div>
+      <div class="warning">فقط Publishable Key را وارد کن. کلیدهای Secret یا service_role را هرگز در این صفحه یا داخل کد مرورگر قرار نده.</div>
+    </div>
+  </div>
+
+  <script>
+    const keyInput = document.getElementById('key');
+    const status = document.getElementById('status');
+    const saved = localStorage.getItem('tj-supabase-publishable-key') || '';
+    if (saved) {
+      keyInput.value = saved;
+      status.textContent = 'وضعیت: یک Publishable Key در این مرورگر ذخیره شده است.';
+    }
+
+    document.getElementById('save').addEventListener('click', () => {
+      const key = keyInput.value.trim();
+      if (!key) {
+        status.textContent = 'لطفاً Publishable Key را وارد کن.';
+        return;
+      }
+      if (!/^sb_publishable_/.test(key) && !/^eyJ/.test(key)) {
+        status.textContent = 'این مقدار شبیه Publishable/anon key نیست. کلید درست Supabase را وارد کن.';
+        return;
+      }
+      localStorage.setItem('tj-supabase-publishable-key', key);
+      status.textContent = 'کلید ذخیره شد. صفحه‌های ثبت‌نام و ورود را از نو باز کن تا اتصال فعال شود.';
+    });
+
+    document.getElementById('clear').addEventListener('click', () => {
+      localStorage.removeItem('tj-supabase-publishable-key');
+      keyInput.value = '';
+      status.textContent = 'کلید پاک شد؛ سایت دوباره در حالت نمایشی محلی قرار می‌گیرد.';
+    });
+  </script>
+</body>
+</html>

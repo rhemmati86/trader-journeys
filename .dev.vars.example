@@ -1,0 +1,5 @@
+# Copy to .dev.vars only for local development. Never commit real values.
+# Point this at a locally hosted or trusted LibreTranslate instance.
+LIBRETRANSLATE_URL=
+# Optional provider key; keep it server-side and out of client JavaScript.
+LIBRETRANSLATE_API_KEY=

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sign in to continue your Trader Journeys profile and story.">
+  <script src="theme.js"></script>
+  <title>ورود | سفرهای یک تریدر</title>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="signup.css"><link rel="stylesheet" href="agent.css"><link rel="stylesheet" href="platform-support.css">
+</head>
+<body>
+<header class="site-header trader-header"><div class="container trader-nav">
+  <a class="brand trader-brand" href="index.html"><span class="brand-mark trader-brand-mark"><span>↗</span></span><span class="brand-copy"><strong data-login="brand">سفرهای یک تریدر</strong><small data-login="tagline">از شکست تا پیروزی · از کمک گرفتن تا کمک کردن</small></span></a>
+  <nav class="trader-main-nav" id="globalNav"><a href="explore.html" data-nav="explore">کشف سفرها</a><a href="index.html#community" data-nav="community">جامعه</a><a href="index.html#trust" data-nav="trust">اعتماد</a><a href="founder.html" data-nav="founder">بنیانگذار</a></nav>
+  <div class="trader-nav-actions"><select id="lang" class="header-language" aria-label="Language"><option value="fa">FA</option><option value="en">EN</option></select><a class="btn btn-mini btn-primary" href="signup.html" data-login="create">ساخت پروفایل</a><button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="globalNav"><span></span><span></span><span></span><b class="sr-only">Menu</b></button></div>
+</div><div class="trader-market-strip"><div class="container trader-market-strip-inner"><span class="market-chip live"><i></i><b>LIVE</b></span><span class="market-chip">FX</span><span class="market-chip">CRYPTO</span><span class="market-chip danger">DRAWDOWN <b>↓</b></span><span class="market-chip recover">RECOVERY <b>↗</b></span></div></div></header>
+<main><section class="signup-hero"><div class="container signup-hero-inner"><span class="eyebrow" data-login="eyebrow">حساب کاربری</span><h1 data-login="title">به سفر خودت برگرد.</h1><p data-login="lead">وارد شو و از همان‌جایی که داستانت را رها کردی ادامه بده.</p></div></section>
+<section class="signup-section"><div class="container" style="max-width:720px"><form class="signup-form" id="loginForm"><div class="form-head"><div><span class="form-kicker" data-login="kicker">ورود امن</span><h2 data-login="formTitle">ورود به حساب</h2></div><span class="profile-badge">AUTH · SESSION</span></div>
+<div class="backend-mode-note" id="loginModeNote" role="status"></div>
+<label><span data-login="email">ایمیل</span><input name="email" type="email" autocomplete="email" required placeholder="name@example.com"></label>
+<label><span data-login="password">رمز عبور</span><input name="password" type="password" autocomplete="current-password" required minlength="8" placeholder="••••••••"></label>
+<button class="btn btn-primary submit-btn" type="submit" data-login="submit">ورود</button>
+<p class="form-message" id="loginMessage" role="status" aria-live="polite"></p>
+<p class="form-footnote"><span data-login="noAccount">حساب نداری؟</span> <a href="signup.html" data-login="createLink">ساخت پروفایل</a></p>
+</form></div></section></main>
+<footer class="site-footer"><div class="container footer-grid"><div><strong data-login="brand">سفرهای یک تریدر</strong><p data-login="tagline">از شکست تا پیروزی · از کمک گرفتن تا کمک کردن</p></div><small data-login="footnote">حساب خودت را امن نگه دار و رمز عبورت را با کسی به اشتراک نگذار.</small></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="supabase-config.js"></script><script src="backend.js"></script><script src="login.js"></script><script src="market-header.js"></script><script src="platform-support.js"></script>
+<div style="text-align:center;margin:18px 0"><a href="supabase-setup.html" style="color:#58d6b0;font-weight:800">تنظیم اتصال Supabase</a></div>
+</body></html>

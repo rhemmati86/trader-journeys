@@ -1,0 +1,15 @@
+.story-translation-block{margin-top:9px;min-width:0}
+.tj-translation-toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:0 0 7px;font-size:11px;color:var(--muted,#91a3ba)}
+.tj-translation-source{display:inline-flex;align-items:center;gap:5px}
+.tj-translation-source::before{content:'文';font-size:13px;color:var(--accent,#59d9b2);font-weight:800}
+.tj-translation-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.tj-translation-button{border:1px solid rgba(89,217,178,.26);border-radius:9px;padding:5px 9px;background:rgba(89,217,178,.06);color:var(--accent,#59d9b2);font:inherit;font-weight:750;cursor:pointer}
+.tj-translation-button:hover{background:rgba(89,217,178,.12)}
+.tj-translation-button:disabled{opacity:.55;cursor:wait}
+.tj-translation-status{max-width:100%;font-size:10px;line-height:1.6}
+.tj-translation-status[data-state="success"]{color:var(--accent,#59d9b2)}
+.tj-translation-status[data-state="error"]{color:#ffad8b}
+.tj-translation-status[data-state="busy"]{color:var(--accent-2,#7cb6ff)}
+.tj-translation-status[data-state="info"]{color:var(--muted,#91a3ba)}
+.story-translation-block.is-translated [data-story-text],.story-translation-block.is-translated .tj-translation-text{border-inline-start:2px solid var(--accent,#59d9b2);padding-inline-start:12px}
+@media(max-width:600px){.tj-translation-toolbar{align-items:flex-start}.tj-translation-actions{width:100%}.tj-translation-status{flex-basis:100%}}

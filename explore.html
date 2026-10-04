@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="کشف سفرهای تریدرها؛ شکست، بازسازی، پیروزی و کمک به دیگران.">
+<meta name="theme-color" content="#07111f">
+<script src="theme.js"></script>
+<title>کشف سفرها | سفرهای یک تریدر</title>
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="explore.css"><link rel="stylesheet" href="platform-support.css"><link rel="stylesheet" href="agent.css"><link rel="stylesheet" href="story-translation.css">
+</head>
+<body class="journeys-home explore-page">
+<header class="site-header trader-header">
+  <div class="container trader-nav">
+    <a class="brand trader-brand" href="index.html" aria-label="سفرهای یک تریدر">
+      <span class="brand-mark trader-brand-mark"><span>↗</span></span>
+      <span class="brand-copy"><strong data-nav="brand">سفرهای یک تریدر</strong><small data-nav="tagline">از شکست تا پیروزی · از کمک گرفتن تا کمک کردن</small></span>
+    </a>
+    <nav class="trader-main-nav" id="globalNav" aria-label="Main navigation / منوی اصلی">
+      <a class="active" href="explore.html" data-nav="explore" aria-current="page">کشف سفرها</a>
+      <a href="index.html#community" data-nav="community">جامعه</a>
+      <a href="index.html#trust" data-nav="trust">اعتماد</a>
+      <a href="dashboard.html" data-nav="myJourney">سفر من</a><a href="founder.html" data-nav="founder">بنیانگذار</a>
+      <a href="settings.html" data-nav="settings">تنظیمات</a>
+    </nav>
+    <div class="trader-nav-actions">
+      <select id="exploreLang" class="header-language" aria-label="Language / زبان"><option value="fa">FA</option><option value="en">EN</option></select>
+      <a class="btn btn-mini btn-primary header-join" href="signup.html" data-nav="join">ورود به جامعه</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="globalNav"><span></span><span></span><span></span><b class="sr-only">Menu</b></button>
+    </div>
+  </div>
+  <div class="trader-market-strip"><div class="container trader-market-strip-inner">
+    <span class="market-chip live"><i></i><b>LIVE</b></span><span class="market-chip">FX</span><span class="market-chip">CRYPTO</span><span class="market-chip danger">DRAWDOWN <b>↓</b></span><span class="market-chip recover">RECOVERY <b>↗</b></span>
+  </div></div>
+  <div class="mobile-trader-menu" id="mobileTraderMenu"><div class="container">
+    <a class="active" href="explore.html" data-nav="explore">کشف سفرها</a><a href="index.html#community" data-nav="community">جامعه</a><a href="index.html#trust" data-nav="trust">اعتماد</a><a href="dashboard.html" data-nav="myJourney">سفر من</a><a href="founder.html" data-nav="founder">بنیانگذار</a><a href="settings.html" data-nav="settings">تنظیمات</a><a href="signup.html" data-nav="join">ورود به جامعه</a>
+  </div></div>
+</header>
+
+<main>
+<section class="explore-hero">
+  <div class="container explore-hero-grid">
+    <div>
+      <div class="explore-kicker"><span class="dot"></span><span data-e="kicker">LIVE JOURNEY MARKET</span></div>
+      <h1 data-e="title">هر سفر یک نمودار است؛ هر نمودار، یک انسان.</h1>
+      <p data-e="lead">از میان داستان‌های واقعی جامعه حرکت کن. ببین چه کسی در Drawdown است، چه کسی در حال بازسازی است و چه کسی از دریافت‌کننده دیروز به حامی امروز تبدیل شده است.</p>
+      <div class="explore-stats">
+        <div class="explore-stat"><strong id="statAll">06</strong><span data-e="statAll">سفر در این نسخه</span></div>
+        <div class="explore-stat"><strong>04</strong><span data-e="statStages">مرحله اصلی</span></div>
+        <div class="explore-stat"><strong>01</strong><span data-e="statReal">داستان واقعی فعلی</span></div>
+      </div>
+    </div>
+    <div class="market-board">
+      <div class="market-board-head"><span data-e="board.title">JOURNEY MARKET</span><span data-e="board.note">روایت جامعه · نه پیش‌بینی قیمت</span></div>
+      <div class="market-board-main">
+        <div class="market-board-grid"></div><span class="board-label b-top">PEAK</span><span class="board-label b-mid">BREAK-EVEN</span><span class="board-label b-low">DRAWDOWN</span>
+        <svg viewBox="0 0 720 240" preserveAspectRatio="none" aria-hidden="true">
+          <defs><linearGradient id="fillE" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="currentColor" stop-opacity=".22"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></linearGradient></defs>
+          <path d="M0 52 C65 35, 102 73, 165 56 S255 80, 310 118 S368 187, 438 171 S508 132, 563 104 S648 66, 720 28 L720 240 L0 240 Z" fill="url(#fillE)"/>
+          <path d="M0 52 C65 35, 102 73, 165 56 S255 80, 310 118 S368 187, 438 171 S508 132, 563 104 S648 66, 720 28" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="368" cy="187" r="7" fill="currentColor"/><circle cx="720" cy="28" r="7" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="market-board-foot"><div><span data-e="board.draw">Drawdown</span><strong>31%</strong></div><div><span data-e="board.recover">Recovery</span><strong>57%</strong></div><div><span data-e="board.give">Giving back</span><strong>96%</strong></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="explore-workspace" id="explore">
+  <div class="container">
+    <div class="explore-tools">
+      <label class="search-box"><span>⌕</span><input id="journeySearch" type="search" placeholder="جست‌وجوی نام، بازار، کشور یا بخشی از داستان…" data-placeholder-fa="جست‌وجوی نام، بازار، کشور یا بخشی از داستان…" data-placeholder-en="Search a name, market, country or part of a story…"><span id="searchCount"></span></label>
+      <div class="sort-box"><label data-e="sort.label">مرتب‌سازی</label><select id="journeySort"><option value="newest">جدیدترین</option><option value="progress">بیشترین پیشرفت</option><option value="needs">نیازمند حمایت</option></select></div>
+    </div>
+
+    <div class="filter-line" role="tablist" aria-label="Journey stages">
+      <button class="explore-filter active" data-filter="all" data-e="filter.all">همه سفرها</button>
+      <button class="explore-filter" data-filter="drawdown" data-e="filter.drawdown">شکست</button>
+      <button class="explore-filter" data-filter="rebuilding" data-e="filter.rebuilding">بازسازی</button>
+      <button class="explore-filter" data-filter="victory" data-e="filter.victory">پیروزی</button>
+      <button class="explore-filter" data-filter="giving" data-e="filter.giving">کمک به دیگران</button>
+      <button class="explore-filter" data-filter="support" data-e="filter.support">نیازمند حمایت</button>
+    </div>
+
+    <div class="explore-layout">
+      <div><div class="journey-list" id="journeyList"></div><div class="load-row"><button id="exploreLoad" data-e="load">سفرهای بیشتری ببین</button></div><div class="explore-footnote" data-e="note">پروفایل‌هایی که هنوز واقعی نشده‌اند با برچسب «نمونه نمایشی» مشخص می‌شوند.</div></div>
+      <aside class="discovery-side">
+        <div class="side-head"><strong data-e="side.title">نمای بازار سفرها</strong><span>LIVE</span></div>
+        <div class="side-block"><h4 data-e="side.stageTitle">مراحل فعلی</h4><div class="side-item"><span><i class="red"></i><span data-e="side.draw">شکست</span></span><b>2</b></div><div class="side-item"><span><i class="blue"></i><span data-e="side.rebuild">بازسازی</span></span><b>2</b></div><div class="side-item"><span><i></i><span data-e="side.progress">پیروزی</span></span><b>1</b></div><div class="side-item"><span><i class="blue"></i><span data-e="side.give">کمک به دیگران</span></span><b>1</b></div></div>
+        <div class="side-block"><h4 data-e="side.marketTitle">بازار</h4><div class="side-item"><span>FOREX</span><b>3</b></div><div class="side-item"><span>CRYPTO</span><b>2</b></div><div class="side-item"><span>FOREX · CRYPTO</span><b>1</b></div></div>
+        <div class="side-block"><h4 data-e="side.principle">اصل جامعه</h4><div class="side-item"><span data-e="side.principleText">یک انسان · یک پروفایل · یک سفر</span></div></div>
+      </aside>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer home-footer"><div class="container footer-grid"><div><strong>سفرهای یک تریدر</strong><small>از شکست تا پیروزی · از کمک گرفتن تا کمک کردن</small></div><div><small>کشف سفرها · نسخه مفهومی</small></div></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="supabase-config.js"></script><script src="backend.js"></script><script src="explore.js"></script><script src="story-translation.js"></script><script src="agent.js"></script><script src="market-header.js"></script>
+<script src="language-sync.js"></script><script src="platform-support.js"></script>
+</body></html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ویرایش پروفایل در سفرهای یک تریدر.">
+  <script src="theme.js"></script>
+  <title>ویرایش پروفایل | سفرهای یک تریدر</title>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="platform-support.css">
+  <link rel="stylesheet" href="agent.css">
+  <link rel="stylesheet" href="edit-profile.css">
+  <link rel="stylesheet" href="story-translation.css">
+</head>
+<body>
+<header class="site-header trader-header">
+  <div class="container trader-nav">
+    <a class="brand trader-brand" href="index.html" aria-label="سفرهای یک تریدر">
+      <span class="brand-mark trader-brand-mark"><span>↗</span></span>
+      <span class="brand-copy"><strong data-nav="brand">سفرهای یک تریدر</strong><small data-nav="tagline">از شکست تا پیروزی · از کمک گرفتن تا کمک کردن</small></span>
+    </a>
+    <nav class="trader-main-nav" id="globalNav" aria-label="Main navigation / منوی اصلی">
+      <a data-nav="explore" href="explore.html">کشف سفرها</a><a data-nav="community" href="index.html#community">جامعه</a><a data-nav="trust" href="index.html#trust">اعتماد</a><a data-nav="myJourney" href="dashboard.html" class="nav-current">سفر من</a><a data-nav="founder" href="founder.html">بنیانگذار</a><a data-nav="settings" href="settings.html">تنظیمات</a>
+    </nav>
+    <div class="trader-nav-actions">
+      <select id="lang" class="header-language" aria-label="Language / زبان"><option value="fa">FA</option><option value="en">EN</option></select>
+      <a data-nav="myJourney" class="btn btn-mini btn-primary header-join" href="dashboard.html">سفر من</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="globalNav"><span></span><span></span><span></span><b class="sr-only">Menu</b></button>
+    </div>
+  </div>
+  <div class="trader-market-strip" aria-label="Market status / وضعیت بازار"><div class="container trader-market-strip-inner"><span class="market-chip live"><i></i><b>LIVE</b></span><span class="market-chip">FX</span><span class="market-chip">CRYPTO</span><span class="market-chip danger">DRAWDOWN <b>↓</b></span><span class="market-chip recover">RECOVERY <b>↗</b></span></div></div>
+  <div class="mobile-trader-menu" id="mobileTraderMenu"><div class="container"><a data-nav="explore" href="explore.html">کشف سفرها</a><a data-nav="community" href="index.html#community">جامعه</a><a data-nav="trust" href="index.html#trust">اعتماد</a><a data-nav="myJourney" href="dashboard.html">سفر من</a><a data-nav="founder" href="founder.html">بنیانگذار</a><a data-nav="settings" href="settings.html">تنظیمات</a></div></div>
+</header>
+
+<main>
+  <section class="edit-hero"><div class="container"><span class="eyebrow" data-t="hero.eyebrow">PROFILE CONTROL</span><h1 data-t="hero.title">پروفایلت را با خودت جلو ببر.</h1><p data-t="hero.lead">اطلاعات هویتی و داستان اصلی را هر زمان که خواستی به‌روزرسانی کن. سفر تو یک بار ساخته می‌شود، اما می‌تواند سال‌ها ادامه پیدا کند.</p></div></section>
+  <section class="edit-main"><div class="container">
+    <form id="profileForm" class="edit-card">
+      <div class="edit-card-head"><div><span class="card-kicker">IDENTITY / PROFILE</span><h2 data-t="identity.title">پروفایل اصلی</h2></div><span id="profileId" class="profile-id">TJ-JOURNEY</span></div>
+      <div class="form-grid">
+        <label><span data-t="fields.name">نام یا نام مستعار</span><input name="name" maxlength="80" required></label>
+        <label><span data-t="fields.username">نام کاربری</span><input name="username" maxlength="30"></label>
+        <label><span data-t="fields.country">کشور</span><input name="country" maxlength="60"></label>
+        <label><span data-t="fields.birth">سال تولد</span><input name="birthYear" inputmode="numeric" maxlength="4"></label>
+        <label><span data-t="fields.years">سابقه فعالیت در بازار</span><input name="years" maxlength="30"></label>
+        <label><span data-t="fields.email">ایمیل</span><input name="email" type="email" readonly></label>
+      </div>
+      <label><span data-t="fields.bio">معرفی کوتاه</span><textarea name="bio" rows="4" maxlength="500"></textarea></label>
+      <label><span data-t="fields.bioLang">زبان اصلی معرفی کوتاه</span><select name="bioLang"><option value="fa">فارسی</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="tr">Türkçe</option><option value="ar">العربية</option><option value="pt">Português</option><option value="it">Italiano</option><option value="ru">Русский</option></select></label>
+      <div class="markets-block"><span class="field-title" data-t="markets.title">بازارهای تجربه‌شده</span><div class="market-options"><label><input type="checkbox" name="market" value="forex"><span>FOREX</span></label><label><input type="checkbox" name="market" value="crypto"><span>CRYPTO</span></label><label><input type="checkbox" name="market" value="other"><span data-t="markets.other">سایر بازارها</span></label></div></div>
+      <div class="role-block"><span class="field-title" data-t="role.title">نقش فعلی من</span><div class="role-options"><label><input type="radio" name="role" value="recipient"><span data-t="role.recipient">فرصت دوباره</span></label><label><input type="radio" name="role" value="community"><span data-t="role.community">عضو جامعه</span></label><label><input type="radio" name="role" value="donor"><span data-t="role.donor">خیر</span></label></div></div>
+      <label><span data-t="story.label">داستان اصلی سفر</span><textarea name="story" rows="11" maxlength="12000"></textarea></label>
+      <label><span data-t="story.language">زبان اصلی داستان</span><select name="storyLang"><option value="fa">فارسی</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="tr">Türkçe</option><option value="ar">العربية</option><option value="pt">Português</option><option value="it">Italiano</option><option value="ru">Русский</option></select></label>
+      <div class="privacy-note"><strong data-t="privacy.title">اطلاعات خصوصی جدا می‌ماند.</strong><p data-t="privacy.text">ایمیل و اطلاعات احراز هویت برای نمایش عمومی طراحی نشده‌اند. در معماری واقعی، داده‌های حساس جداگانه و امن نگهداری می‌شوند.</p></div>
+      <div class="form-actions"><a data-nav="myJourney" class="btn btn-outline" href="dashboard.html" data-t="actions.cancel">انصراف</a><button class="btn btn-primary" type="submit" data-t="actions.save">ذخیره تغییرات</button></div>
+      <p id="profileMessage" class="form-message" role="status"></p>
+    </form>
+  </div></section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><strong>سفرهای یک تریدر</strong><p>از شکست تا پیروزی · از کمک گرفتن تا کمک کردن</p></div><small>Profile editor prototype</small></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="supabase-config.js"></script><script src="backend.js"></script><script src="boot-page.js" data-page="edit-profile" data-entry="edit-profile.js" data-auth="required"></script>
+<script src="story-translation.js"></script><script src="agent.js"></script><script src="market-header.js"></script>
+<script src="language-sync.js"></script><script src="platform-support.js"></script>
+</body>
+</html>

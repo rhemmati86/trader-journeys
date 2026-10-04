@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="داشبورد سفر من در سفرهای یک تریدر؛ مدیریت پروفایل، داستان و فصل‌های سفر.">
+  <script src="theme.js"></script>
+  <title>سفر من | سفرهای یک تریدر</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="agent.css">
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="story-translation.css"><link rel="stylesheet" href="platform-support.css">
+</head>
+<body>
+<header class="site-header trader-header">
+  <div class="container trader-nav">
+    <a class="brand trader-brand" href="index.html" aria-label="سفرهای یک تریدر">
+      <span class="brand-mark trader-brand-mark"><span>↗</span></span>
+      <span class="brand-copy"><strong>سفرهای یک تریدر</strong><small>از شکست تا پیروزی · از کمک گرفتن تا کمک کردن</small></span>
+    </a>
+    <nav class="trader-main-nav" id="globalNav" aria-label="Main navigation / منوی اصلی">
+      <a href="explore.html" data-nav="explore">کشف سفرها</a>
+      <a href="index.html#community" data-nav="community">جامعه</a>
+      <a href="index.html#trust" data-nav="trust">اعتماد</a>
+      <a href="dashboard.html" class="nav-current" data-nav="myJourney">سفر من</a>
+      <a href="founder.html" data-nav="founder">بنیانگذار</a>
+      <a href="settings.html" data-nav="settings">تنظیمات</a>
+    </nav>
+    <div class="trader-nav-actions">
+      <select id="lang" class="header-language" aria-label="Language / زبان"><option value="fa">FA</option><option value="en">EN</option></select>
+      <a class="btn btn-mini btn-primary header-join" href="dashboard.html" data-nav="myJourney">سفر من</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="globalNav"><span></span><span></span><span></span><b class="sr-only">Menu</b></button>
+    </div>
+  </div>
+  <div class="trader-market-strip" aria-label="Market status / وضعیت بازار">
+    <div class="container trader-market-strip-inner">
+      <span class="market-chip live"><i></i><b>LIVE</b></span>
+      <span class="market-chip">FX</span><span class="market-chip">CRYPTO</span>
+      <span class="market-chip danger">DRAWDOWN <b>↓</b></span><span class="market-chip recover">RECOVERY <b>↗</b></span>
+    </div>
+  </div>
+  <div class="mobile-trader-menu" id="mobileTraderMenu"><div class="container">
+    <a href="explore.html" data-nav="explore">کشف سفرها</a><a href="index.html#community" data-nav="community">جامعه</a><a href="index.html#trust" data-nav="trust">اعتماد</a><a href="dashboard.html" data-nav="myJourney">سفر من</a><a href="founder.html" data-nav="founder">بنیانگذار</a><a href="settings.html" data-nav="settings">تنظیمات</a>
+  </div></div>
+</header>
+
+<main>
+  <section class="dashboard-hero">
+    <div class="container">
+      <div class="dash-breadcrumb"><span>TRADER JOURNEY</span><b>MY PROFILE</b></div>
+      <div class="dash-head">
+        <div>
+          <span class="eyebrow" data-t="hero.eyebrow">داشبورد سفر</span>
+          <h1><span data-t="hero.greeting">سفر تو هنوز ادامه دارد.</span><span id="userStage" class="stage-inline">فرصت دوباره</span></h1>
+          <p data-t="hero.lead">اینجا جایی است که داستانت را ادامه می‌دهی؛ فصل‌های جدید می‌سازی، تجربه‌ها را ثبت می‌کنی و مسیرت را با یک پروفایل واحد جلو می‌بری.</p>
+        </div>
+        <div class="dash-actions">
+          <a class="btn btn-primary" href="#newChapter" data-t="hero.add">+ فصل جدید</a>
+          <a id="publicJourneyLink" class="btn btn-outline" href="journey.html" data-t="hero.view">مشاهده سفر عمومی</a>
+          <button type="button" id="signOutBtn" class="btn btn-outline" data-t="profile.signOut">خروج از حساب</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dashboard-main">
+    <div class="container">
+      <div class="dashboard-grid">
+        <section class="journey-dashboard-card journey-chart-card">
+          <div class="card-header-row"><div><span class="card-kicker">JOURNEY CHART</span><h2 data-t="chart.title">نقشه مسیر من</h2></div><span id="currentStageBadge" class="status-badge">RECOVERY</span></div>
+          <div class="dashboard-chart">
+            <div class="chart-grid"></div>
+            <svg viewBox="0 0 1000 360" preserveAspectRatio="none" aria-label="نمودار مسیر سفر">
+              <defs><linearGradient id="dashFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#59d9b2" stop-opacity=".24"/><stop offset="1" stop-color="#59d9b2" stop-opacity="0"/></linearGradient></defs>
+              <path class="dash-area" d="M0 116 C82 80 140 142 215 126 C286 108 330 166 395 218 C447 260 510 285 575 245 C640 206 692 210 748 164 C812 111 878 112 1000 56 L1000 360 L0 360 Z"/>
+              <path class="dash-line" d="M0 116 C82 80 140 142 215 126 C286 108 330 166 395 218 C447 260 510 285 575 245 C640 206 692 210 748 164 C812 111 878 112 1000 56"/>
+              <circle class="dash-dot danger" cx="395" cy="218" r="8"/><circle class="dash-dot recovery" cx="575" cy="245" r="8"/><circle class="dash-dot future" cx="1000" cy="56" r="8"/>
+            </svg>
+            <div class="chart-tag t-start" data-l10n-fa="شروع" data-l10n-en="Start">شروع</div><div class="chart-tag t-fail" data-l10n-fa="شکست" data-l10n-en="Failure">شکست</div><div class="chart-tag t-rec" data-l10n-fa="فرصت دوباره" data-l10n-en="Second chance">فرصت دوباره</div><div class="chart-tag t-win" data-l10n-fa="پیروزی" data-l10n-en="Progress">پیروزی</div>
+          </div>
+          <div class="journey-stats">
+            <div><strong id="chapterCount">0</strong><span data-t="chart.chapters">فصل ثبت‌شده</span></div>
+            <div><strong id="updateCount">0</strong><span data-t="chart.updates">به‌روزرسانی</span></div>
+            <div><strong id="profileCompleteness">0%</strong><span data-t="chart.complete">تکمیل پروفایل</span></div>
+            <div><strong id="roleValue">—</strong><span data-t="chart.role">نقش فعلی</span></div>
+          </div>
+        </section>
+
+        <aside class="journey-dashboard-card profile-card">
+          <div class="profile-top"><div class="avatar" id="profileAvatar">—</div><div><span class="card-kicker" data-t="profile.kicker">پروفایل یکتا</span><h2 id="profileName">کاربر جدید</h2><p id="profileMeta">TJ-JOURNEY</p></div></div>
+          <div class="verify-row"><span class="verify-dot">✓</span><div><strong data-t="profile.verify">هویت در انتظار بررسی</strong><small data-t="profile.verifyText">احراز هویت در مرحله بعد تکمیل می‌شود.</small></div></div>
+          <button type="button" id="publishProfileToggle" class="btn btn-outline profile-visibility-btn" data-t="profile.publish">انتشار پروفایل</button>
+          <p id="publicationNote" class="form-footnote" data-t="profile.privateNote">پروفایل به‌صورت پیش‌فرض خصوصی است؛ برای نمایش عمومی باید خودت آن را منتشر کنی.</p>
+          <div class="mini-list">
+            <div><span data-t="profile.country">کشور</span><b id="profileCountry">—</b></div>
+            <div><span data-t="profile.markets">بازارها</span><b id="profileMarkets">—</b></div>
+            <div><span data-t="profile.years">سابقه</span><b id="profileYears">—</b></div>
+            <div><span data-t="profile.username">نام کاربری</span><b id="profileUsername">—</b></div>
+          </div>
+          <div class="profile-links"><a class="profile-link" href="edit-profile.html">ویرایش پروفایل ←</a><a class="profile-link" href="settings.html" data-t="profile.settings">تنظیمات ←</a></div>
+        </aside>
+      </div>
+
+      <div class="journey-section-heading">
+        <div><span class="eyebrow" data-t="timeline.eyebrow">MY JOURNEY</span><h2 data-t="timeline.title">فصل‌های سفر من</h2></div>
+        <p data-t="timeline.lead">هر چیزی که در مسیر تجربه می‌کنی می‌تواند به یک فصل تبدیل شود.</p>
+      </div>
+
+      <div class="timeline-layout">
+        <section class="timeline-card" id="timelineList"></section>
+
+        <aside class="new-chapter-card" id="newChapter">
+          <span class="card-kicker" data-t="new.kicker">UPDATE JOURNEY</span>
+          <h2 data-t="new.title">یک فصل تازه اضافه کن.</h2>
+          <p data-t="new.text">لازم نیست داستانت را کامل کنی. فقط بگو امروز کجای سفر ایستاده‌ای.</p>
+          <form id="chapterForm">
+            <label><span data-t="new.titleLabel">عنوان فصل</span><input name="title" maxlength="90" required placeholder="مثلاً اولین قدم برای بازسازی" data-ph="new.titlePlaceholder"></label>
+            <label><span data-t="new.stageLabel">مرحله سفر</span><select name="stage"><option value="start" data-stage-key="start">شروع</option><option value="experience" data-stage-key="experience">تجربه</option><option value="success" data-stage-key="success">موفقیت</option><option value="failure" data-stage-key="failure">شکست</option><option value="recovery" data-stage-key="recovery">فرصت دوباره</option><option value="rebuild" data-stage-key="rebuild">بازسازی</option><option value="victory" data-stage-key="victory">پیروزی</option><option value="giving" data-stage-key="giving">کمک به دیگران</option></select></label>
+            <label><span data-t="new.dateLabel">تاریخ</span><input name="date" type="date"></label>
+            <label><span data-t="new.bodyLabel">داستان این فصل</span><textarea name="body" rows="7" maxlength="1500" required placeholder="این مرحله از سفرت را با زبان خودت بنویس..." data-ph="new.bodyPlaceholder"></textarea></label>
+            <label><span data-t="new.languageLabel">زبان اصلی این داستان</span><select name="sourceLang"><option value="fa">فارسی</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="tr">Türkçe</option><option value="ar">العربية</option><option value="pt">Português</option><option value="it">Italiano</option><option value="ru">Русский</option></select></label>
+            <label class="public-toggle"><input type="checkbox" name="public" checked><span data-t="new.public">این فصل را در پروفایل عمومی من نمایش بده.</span></label>
+            <button class="btn btn-primary" type="submit" data-t="new.save">ثبت فصل</button>
+            <p id="chapterMessage" class="form-message" role="status"></p>
+          </form>
+      </div>
+
+      <div class="chapter-modal" id="chapterModal" hidden>
+        <div class="chapter-modal-backdrop" data-close-modal></div>
+        <div class="chapter-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="editChapterTitle">
+          <div class="edit-modal-head"><div><span class="card-kicker">EDIT JOURNEY</span><h2 id="editChapterTitle" data-t="modal.editTitle">ویرایش فصل</h2></div><button type="button" class="modal-close" data-close-modal>×</button></div>
+          <form id="editChapterForm">
+            <input type="hidden" name="id">
+            <label><span data-t="modal.titleLabel">عنوان فصل</span><input name="title" maxlength="90" required></label>
+            <label><span data-t="modal.stageLabel">مرحله سفر</span><select name="stage"><option value="start" data-stage-key="start">شروع</option><option value="experience" data-stage-key="experience">تجربه</option><option value="success" data-stage-key="success">موفقیت</option><option value="failure" data-stage-key="failure">شکست</option><option value="recovery" data-stage-key="recovery">فرصت دوباره</option><option value="rebuild" data-stage-key="rebuild">بازسازی</option><option value="victory" data-stage-key="victory">پیروزی</option><option value="giving" data-stage-key="giving">کمک به دیگران</option></select></label>
+            <label><span data-t="modal.dateLabel">تاریخ</span><input name="date" type="date"></label>
+            <label><span data-t="modal.bodyLabel">داستان این فصل</span><textarea name="body" rows="8" maxlength="1500" required></textarea></label>
+            <label><span data-t="modal.languageLabel">زبان اصلی این داستان</span><select name="sourceLang"><option value="fa">فارسی</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="tr">Türkçe</option><option value="ar">العربية</option><option value="pt">Português</option><option value="it">Italiano</option><option value="ru">Русский</option></select></label>
+            <label class="public-toggle"><input type="checkbox" name="public"><span data-t="modal.public">این فصل را در پروفایل عمومی نمایش بده.</span></label>
+            <div class="modal-actions"><button type="button" class="btn btn-outline" data-close-modal data-t="modal.cancel">انصراف</button><button class="btn btn-primary" type="submit" data-t="modal.save">ذخیره فصل</button></div>
+            <p id="editChapterMessage" class="form-message" role="status"></p>
+          </form>
+        </div>
+      </div>
+
+      <section class="private-support-card" aria-labelledby="privateSupportTitle">
+        <div class="private-support-heading"><span class="eyebrow" data-t="private.titleKicker">PRIVATE DETAILS</span><h2 id="privateSupportTitle" data-t="private.title">اطلاعات خصوصی درخواست حمایت</h2><p data-t="private.lead">این اطلاعات عمومی نیست و فقط برای خودت نگهداری می‌شود. در این نسخه، سایت پرداختی انجام نمی‌دهد.</p></div>
+        <form id="privateSupportForm" class="private-support-form">
+          <div class="private-needs"><label><input type="checkbox" name="need" value="living"><span data-t="private.living">کمک معیشتی</span></label><label><input type="checkbox" name="need" value="housing"><span data-t="private.housing">مسکن / اجاره</span></label><label><input type="checkbox" name="need" value="debt"><span data-t="private.debt">هزینه ضروری / بدهی</span></label><label><input type="checkbox" name="need" value="work"><span data-t="private.work">کار و مهارت</span></label><label><input type="checkbox" name="need" value="other"><span data-t="private.other">نیاز دیگر</span></label></div>
+          <label><span data-t="private.detail">توضیح خصوصی وضعیت یا هدف کمک</span><textarea name="needDetail" rows="4" maxlength="3000" data-ph="private.detailPh" placeholder="این متن عمومی نمی‌شود..."></textarea></label>
+          <div class="field-grid two"><label><span data-t="private.recipientWallet">آدرس کیف پول دریافت کمک (اختیاری)</span><input name="wallet" dir="ltr" maxlength="160" placeholder="Wallet address"></label><label><span data-t="private.donorWallet">روش یا کیف پول کمک (اختیاری)</span><input name="donorWallet" dir="ltr" maxlength="160" placeholder="Wallet address"></label></div>
+          <button class="btn btn-outline" type="submit" data-t="private.save">ذخیره اطلاعات خصوصی</button><p class="form-message" id="privateSupportMessage" role="status"></p>
+        </form>
+      </section>
+
+      <section class="role-evolution">
+        <div><span class="eyebrow" data-t="role.eyebrow">ROLE IS NOT FIXED</span><h2 data-t="role.title">امروز کمک می‌گیرم؛ فردا می‌توانم کمک کنم.</h2><p data-t="role.text">نقش تو با یک برچسب دائمی تعریف نمی‌شود. همین پروفایل می‌تواند روزی از «فرصت دوباره» به «حامی دیگران» تبدیل شود.</p></div>
+        <div class="role-flow"><span class="active" data-flow="recipient">فرصت دوباره</span><i>→</i><span data-flow="rebuild">بازسازی</span><i>→</i><span data-flow="progress">پیشرفت</span><i>→</i><span data-flow="donor">حامی</span></div>
+      </section>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container footer-grid"><div><strong data-l10n-fa="سفرهای یک تریدر" data-l10n-en="Trader Journeys">سفرهای یک تریدر</strong><p data-l10n-fa="از شکست تا پیروزی · از کمک گرفتن تا کمک کردن" data-l10n-en="From failure to progress · From receiving to giving back">از شکست تا پیروزی · از کمک گرفتن تا کمک کردن</p></div><small data-l10n-fa="نمونه اولیه داشبورد سفر من" data-l10n-en="My Journey dashboard prototype">My Journey dashboard prototype</small></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="supabase-config.js"></script><script src="backend.js"></script><script src="boot-page.js" data-page="dashboard" data-entry="dashboard.js" data-auth="required"></script>
+<script src="story-translation.js"></script>
+<script src="agent.js"></script>
+<script src="market-header.js"></script>
+<script src="language-sync.js"></script><script src="platform-support.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07111f">
+<title>سفر روح‌الله | سفرهای یک تریدر</title>
+<script src="theme.js"></script>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="journey.css">
+<link rel="stylesheet" href="story-translation.css">
+<link rel="stylesheet" href="agent.css">
+<link rel="stylesheet" href="platform-support.css">
+</head>
+<body class="journey-page">
+<header class="site-header trader-header">
+  <div class="container trader-nav">
+    <a class="brand trader-brand" href="index.html" aria-label="سفرهای یک تریدر">
+      <span class="brand-mark trader-brand-mark"><span>↗</span></span>
+      <span class="brand-copy"><strong data-nav="brand">سفرهای یک تریدر</strong><small data-nav="tagline">از شکست تا پیروزی · از کمک گرفتن تا کمک کردن</small></span>
+    </a>
+    <nav class="trader-main-nav" id="globalNav" aria-label="Main navigation / منوی اصلی">
+      <a class="active" href="explore.html" data-nav="explore">کشف سفرها</a>
+      <a href="index.html#community" data-nav="community">جامعه</a>
+      <a href="index.html#trust" data-nav="trust">اعتماد</a>
+      <a href="founder.html" data-nav="founder">بنیانگذار</a>
+      <a href="settings.html" data-nav="settings">تنظیمات</a>
+    </nav>
+    <div class="trader-nav-actions">
+      <select id="journeyLang" class="header-language" aria-label="Language / زبان"><option value="fa">FA</option><option value="en">EN</option></select>
+      <a class="btn btn-mini btn-primary header-join" href="signup.html" data-nav="join">ورود به جامعه</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="globalNav"><span></span><span></span><span></span><b class="sr-only">Menu</b></button>
+    </div>
+  </div>
+  <div class="trader-market-strip"><div class="container trader-market-strip-inner">
+    <span class="market-chip live"><i></i><b>LIVE</b></span><span class="market-chip">FX</span><span class="market-chip">CRYPTO</span><span class="market-chip danger">DRAWDOWN <b>↓</b></span><span class="market-chip recover">RECOVERY <b>↗</b></span>
+  </div></div>
+  <div class="mobile-trader-menu" id="mobileTraderMenu"><div class="container">
+    <a class="active" href="explore.html" data-nav="explore">کشف سفرها</a><a href="index.html#community" data-nav="community">جامعه</a><a href="index.html#trust" data-nav="trust">اعتماد</a><a href="founder.html" data-nav="founder">بنیانگذار</a><a href="settings.html" data-nav="settings">تنظیمات</a><a href="signup.html" data-nav="join">ورود به جامعه</a>
+  </div></div>
+</header>
+
+<main>
+<section class="journey-hero">
+  <div class="container">
+    <a class="back-link" href="explore.html" data-j="back">← بازگشت به کشف سفرها</a>
+    <div class="journey-hero-grid">
+      <div class="journey-identity">
+        <div class="identity-top"><span class="verified-badge">✓ <span data-j="verified">هویت تأییدشده</span></span><span class="real-badge" data-j="real">داستان واقعی</span></div>
+        <div class="identity-person"><div class="identity-avatar">RJ</div><div><h1 id="personName">روح‌الله</h1><p id="personMeta">هلند · فارکس · کریپتو · بنیانگذار</p></div></div>
+        <p class="identity-quote" data-j="quote">«من نمی‌خواهم داستانم با شکست تمام شود.»</p>
+        <div class="journey-actions"><a class="btn btn-primary" href="#support" data-j="supportBtn">حمایت از این سفر</a><button class="btn btn-secondary" id="followBtn" type="button" data-j="follow">دنبال کردن سفر</button></div>
+        <div class="identity-stats"><div><span data-j="stage">مرحله فعلی</span><strong id="currentStage">فرصت دوباره</strong></div><div><span data-j="market">بازار</span><strong>FOREX · CRYPTO</strong></div><div><span data-j="updated">آخرین به‌روزرسانی</span><strong>اکتبر ۲۰۲۶</strong></div></div>
+      </div>
+      <div class="journey-chart-shell">
+        <div class="chart-shell-head"><span>JOURNEY CHART</span><span class="live-label"><i></i> LIVE</span></div>
+        <div class="journey-large-chart">
+          <div class="chart-grid"></div>
+          <div class="chart-label label-entry">شروع</div><div class="chart-label label-high">رشد</div><div class="chart-label label-draw">شکست</div><div class="chart-label label-recover">فرصت دوباره</div>
+          <svg viewBox="0 0 920 360" preserveAspectRatio="none" aria-label="نمودار سفر">
+            <defs><linearGradient id="area" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="currentColor" stop-opacity=".18"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></linearGradient></defs>
+            <path d="M0 260 C70 250, 115 210, 165 218 S250 148, 322 160 S390 90, 455 112 S510 260, 585 292 S675 282, 745 245 S830 188, 920 110 L920 360 L0 360 Z" fill="url(#area)"/>
+            <path d="M0 260 C70 250, 115 210, 165 218 S250 148, 322 160 S390 90, 455 112 S510 260, 585 292 S675 282, 745 245 S830 188, 920 110" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="455" cy="112" r="7" fill="currentColor"/><circle cx="585" cy="292" r="7" fill="currentColor"/><circle cx="920" cy="110" r="8" fill="currentColor"/>
+          </svg>
+          <div class="chart-axis"><span>شروع سفر</span><span>اکنون</span></div>
+        </div>
+        <div class="chart-footer"><div><span data-j="drawdown">بیشترین افت</span><strong>−۷۴%</strong></div><div><span data-j="current">موقعیت فعلی</span><strong>فرصت دوباره</strong></div><div><span data-j="future">هدف سفر</span><strong>پیروزی</strong></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="journey-progress">
+  <div class="container">
+    <div class="section-kicker" data-j="journeyKicker">سفر در یک نگاه</div>
+    <div class="journey-rail">
+      <article class="rail-step completed"><span class="rail-dot">✓</span><div><small>۲۰۰۰–۲۰۱۲</small><strong data-j="step1">سال‌های تلاش</strong><p data-j="step1p">کار از کودکی و ساختن آرزوی استقلال مالی</p></div></article>
+      <article class="rail-step completed"><span class="rail-dot">✓</span><div><small>۲۰۱۴–۲۰۱۹</small><strong data-j="step2">ورود به بازار</strong><p data-j="step2p">فارکس، یادگیری، تجربه و بالا و پایین‌های اولین سال‌ها</p></div></article>
+      <article class="rail-step completed danger-step"><span class="rail-dot">↓</span><div><small>۲۰۲۰–۲۰۲۶</small><strong data-j="step3">نقطه شکست</strong><p data-j="step3p">ورود به کریپتو و از دست رفتن بخش بزرگی از دارایی در چند تصمیم اشتباه</p></div></article>
+      <article class="rail-step current-step"><span class="rail-dot">↗</span><div><small>اکنون</small><strong data-j="step4">فرصت دوباره</strong><p data-j="step4p">تلاش برای بازسازی زندگی، ساختن یک مسیر تازه و شکل‌دادن این جامعه</p></div></article>
+      <article class="rail-step future-step"><span class="rail-dot">★</span><div><small data-j="futureLabel">فصل بعد</small><strong data-j="step5">پیروزی</strong><p data-j="step5p">بازگشت به ثبات و روزی که کمک به دیگران شروع می‌شود</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="story-section">
+  <div class="container story-layout">
+    <div class="story-main">
+      <div class="story-header"><div><span class="section-kicker" data-j="storyKicker">داستان سفر</span><h2 data-j="storyTitle">داستان من، فصل به فصل</h2></div><span class="story-label">REAL JOURNEY</span></div>
+      <article class="story-chapter"><div class="chapter-marker">01</div><div><span class="chapter-kicker" data-j="chapter1k">قبل از بازار</span><h3 data-j="chapter1t">من از کودکی کار کردم.</h3><p data-j="chapter1p">پسر یک کارگر بودم و از همان سال‌های اول زندگی کار کردن را یاد گرفتم. همیشه یک خواسته ساده داشتم: اینکه بتوانم آینده‌ام را با دست‌های خودم بسازم.</p></div></article>
+      <article class="story-chapter"><div class="chapter-marker">02</div><div><span class="chapter-kicker" data-j="chapter2k">ورود به بازار</span><h3 data-j="chapter2t">یک تصمیم از دلِ فقر</h3><p data-j="chapter2p">در دوران کارشناسی ارشد، وقتی ۲۸ ساله بودم، عاشق شدم. فقر برایم فقط یک عدد نبود؛ تبدیل به انگیزه‌ای شد برای اینکه وارد بازارهای مالی شوم و به ثروت برسم.</p></div></article>
+      <article class="story-chapter danger"><div class="chapter-marker">03</div><div><span class="chapter-kicker" data-j="chapter3k">نقطه شکست</span><h3 data-j="chapter3t">چند تصمیم اشتباه، یک سقوط بزرگ</h3><p data-j="chapter3p">بعد از مدتی فعالیت در فارکس به بازار کریپتو رفتم. چند تصمیم اشتباه باعث شد دارایی‌ام را از دست بدهم و با بیش از ۳۰ هزار دلار بدهی وارد سخت‌ترین فصل زندگی‌ام شوم.</p></div></article>
+      <article class="story-chapter recovery"><div class="chapter-marker">04</div><div><span class="chapter-kicker" data-j="chapter4k">فرصت دوباره</span><h3 data-j="chapter4t">اینجا پایان داستان نیست.</h3><p data-j="chapter4p">همین تجربه، جرقه شکل‌گیری «سفرهای یک تریدر» شد: جایی که آدم‌ها بتوانند بدون پنهان‌کاری داستان‌شان را بگویند، شنیده شوند و برای ساختن یک مسیر تازه فرصت پیدا کنند.</p></div></article>
+    </div>
+    <aside class="story-side" id="support">
+      <div class="support-card"><span class="section-kicker" data-j="supportKicker">حمایت از سفر</span><h3 data-j="supportTitle">هر کمک، یک قدم در یک سفر واقعی است.</h3><p data-j="supportText">در نسخه واقعی، این بخش می‌تواند اطلاعات کمک، روش انتقال مستقیم و سوابق شفاف حمایت را نمایش دهد.</p><button class="btn btn-primary full" type="button" id="supportDemo" data-j="supportDemo">نمایش مسیر حمایت</button><small data-j="supportNote">فعلاً این دکمه نمایشی است و هیچ پرداختی انجام نمی‌دهد.</small></div>
+      <div class="side-card"><span class="section-kicker" data-j="principleKicker">اصل این پروفایل</span><div class="principle-line"><b>۱</b><span data-j="principle1">انسان</span></div><div class="principle-line"><b>۱</b><span data-j="principle2">پروفایل</span></div><div class="principle-line"><b>∞</b><span data-j="principle3">فصل‌های سفر</span></div></div>
+    </aside>
+  </div>
+</section>
+
+<section class="updates-section">
+  <div class="container">
+    <div class="story-header"><div><span class="section-kicker" data-j="updatesKicker">به‌روزرسانی سفر</span><h2 data-j="updatesTitle">این داستان هنوز ادامه دارد.</h2></div><button class="btn btn-secondary" id="followBottom" type="button" data-j="follow2">دنبال کردن سفر</button></div>
+    <div class="update-grid">
+      <article><span>اکتبر ۲۰۲۶</span><h3 data-j="update1">ایده «سفرهای یک تریدر» متولد شد.</h3><p data-j="update1p">هدف: ساختن جامعه‌ای که شکست مالی را پایان هویت انسان نداند.</p></article>
+      <article><span data-j="nextUpdate">فصل بعد</span><h3 data-j="update2">اولین قدم برای بازسازی</h3><p data-j="update2p">این قسمت با به‌روزرسانی واقعی صاحب پروفایل تکمیل خواهد شد.</p></article>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer home-footer"><div class="container footer-grid"><div><strong>سفرهای یک تریدر</strong><small>از شکست تا پیروزی · از کمک گرفتن تا کمک کردن</small></div><div><small>یک انسان · یک پروفایل · یک سفر</small></div></div></footer>
+<script src="agent.js"></script><script src="market-header.js"></script>
+<script src="journey.js"></script>
+<script src="language-sync.js"></script><script src="story-translation.js"></script>
+<script src="platform-support.js"></script>
+</body></html>

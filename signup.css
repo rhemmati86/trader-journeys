@@ -1,0 +1,47 @@
+.signup-hero{padding:72px 0 42px;text-align:center}
+.signup-hero-inner{max-width:900px}
+.signup-hero h1{font-size:clamp(40px,6vw,68px);line-height:1.08;margin:0 0 14px;letter-spacing:-.04em}
+.signup-hero p{max-width:680px;margin:0 auto;color:var(--muted);font-size:17px}
+.role-switch{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:34px auto 0;max-width:720px}
+.role-tab{appearance:none;border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:22px;padding:20px;text-align:start;display:flex;align-items:center;gap:14px;cursor:pointer;transition:.2s ease;font:inherit}
+.role-tab:hover,.role-tab.active{border-color:rgba(88,214,176,.45);background:linear-gradient(145deg,#12263a,#0e1a2b);transform:translateY(-1px)}
+.role-icon{font-size:29px}
+.role-tab strong,.role-tab small{display:block}.role-tab small{color:var(--muted);font-size:12px;margin-top:2px}
+.signup-section{padding-top:26px}.signup-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(320px,.8fr);gap:22px;align-items:start}
+.signup-form,.journey-preview{border:1px solid var(--line);border-radius:26px;background:linear-gradient(145deg,#0f1d30,#0b1524);box-shadow:0 20px 70px rgba(0,0,0,.15)}
+.signup-form{padding:30px}.journey-preview{padding:26px;position:sticky;top:96px}
+.form-head{display:flex;justify-content:space-between;gap:20px;align-items:start;border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:26px}
+.form-kicker{display:block;color:var(--accent);font-size:12px;font-weight:800;margin-bottom:5px}.form-head h2{margin:0;font-size:28px;line-height:1.2}.profile-badge,.live-chip{font-size:10px;letter-spacing:.12em;color:#93a8c4;border:1px solid var(--line);padding:7px 9px;border-radius:999px;white-space:nowrap}
+.form-section-title{display:flex;align-items:center;gap:11px;margin:28px 0 14px}.form-section-title span{width:30px;height:30px;border-radius:10px;display:grid;place-items:center;color:var(--accent);border:1px solid rgba(88,214,176,.2);font-size:11px;font-weight:900}.form-section-title h3{margin:0;font-size:18px}
+.field-grid{display:grid;gap:14px}.field-grid.two{grid-template-columns:1fr 1fr}
+.signup-form label{display:block;margin-bottom:14px}.signup-form label>span{display:block;font-size:13px;font-weight:700;margin-bottom:7px}.signup-form input,.signup-form select,.signup-form textarea{width:100%;background:#091422;border:1px solid var(--line);border-radius:13px;color:var(--text);padding:12px 13px;font:inherit;outline:none}.signup-form input:focus,.signup-form select:focus,.signup-form textarea:focus{border-color:rgba(88,214,176,.48);box-shadow:0 0 0 3px rgba(88,214,176,.08)}
+.signup-form textarea{resize:vertical;min-height:92px}.signup-form input::placeholder,.signup-form textarea::placeholder{color:#5f718a}
+.check-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}.check-card{margin:0!important;display:flex!important;gap:10px;align-items:center;padding:14px;border:1px solid var(--line);border-radius:15px;background:#0a1626;cursor:pointer}.check-card input{width:auto}.check-card b,.check-card small{display:block}.check-card b{font-size:13px}.check-card small{color:var(--muted);font-size:10px}
+.need-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:15px}.need-chip{margin:0!important;display:flex!important}.need-chip input{position:absolute;opacity:0}.need-chip span{width:100%;padding:11px;border:1px solid var(--line);border-radius:12px;text-align:center;color:var(--muted);cursor:pointer;font-size:12px}.need-chip input:checked+span{border-color:rgba(88,214,176,.5);color:var(--text);background:rgba(88,214,176,.08)}
+.wallet-box{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:18px;border:1px dashed rgba(124,182,255,.25);border-radius:16px;background:rgba(124,182,255,.04);margin-top:10px}.wallet-box strong{font-size:14px}.wallet-box p{margin:4px 0 0;color:var(--muted);font-size:11px;line-height:1.7}.wallet-box input{align-self:center}
+.consent-row{margin:22px 0 16px;padding-top:18px;border-top:1px solid var(--line)}.check-consent{display:flex!important;gap:10px;align-items:flex-start}.check-consent input{margin-top:5px;width:auto!important}.check-consent span{font-size:11px!important;color:var(--muted);font-weight:500!important;line-height:1.7}
+.submit-btn{width:100%;min-height:54px}.form-footnote{color:#74869e;font-size:10px;text-align:center;margin:11px 0 0}.donor-only[hidden],.recipient-only[hidden]{display:none}
+.preview-head{display:flex;justify-content:space-between;align-items:center;color:#a9bad0;font-size:12px;font-weight:800}.live-chip{color:var(--accent);border-color:rgba(88,214,176,.2)}
+.journey-chart{position:relative;height:350px;border:1px solid var(--line);border-radius:20px;background:repeating-linear-gradient(to bottom,rgba(255,255,255,.03) 0,rgba(255,255,255,.03) 1px,transparent 1px,transparent 70px),repeating-linear-gradient(to right,rgba(255,255,255,.025) 0,rgba(255,255,255,.025) 1px,transparent 1px,transparent 86px);overflow:hidden;margin-top:16px}.journey-chart svg{position:absolute;inset:0;width:100%;height:100%}.preview-line{fill:none;stroke:#59d9b2;stroke-width:4;stroke-linecap:round}.preview-area{fill:url(#journeyFill)}.preview-dot{fill:#59d9b2;stroke:#07111f;stroke-width:4}.preview-dot.future{fill:#7cb6ff}.chart-label{position:absolute;z-index:2;font-size:10px;font-weight:800;color:#9db0c8;background:#0b1727;border:1px solid var(--line);padding:6px 8px;border-radius:9px}.label-start{top:26%;left:5%}.label-draw{top:57%;left:40%}.label-rec{top:46%;left:61%}.label-win{top:12%;right:4%}
+.preview-copy h3{font-size:20px;margin:18px 0 6px}.preview-copy p{font-size:12px;color:var(--muted);margin:0}.verification-card{display:flex;gap:10px;align-items:flex-start;margin-top:18px;padding:14px;border:1px solid var(--line);border-radius:15px;background:rgba(88,214,176,.04)}.verification-card>span{width:25px;height:25px;display:grid;place-items:center;border-radius:8px;background:rgba(88,214,176,.12);color:var(--accent);font-weight:900}.verification-card strong{font-size:13px}.verification-card p{margin:2px 0 0;color:var(--muted);font-size:10px}
+@media(max-width:960px){.signup-grid{grid-template-columns:1fr}.journey-preview{position:static}.check-grid,.need-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.container{width:min(calc(100% - 24px),var(--max))}.role-switch,.field-grid.two,.check-grid,.need-grid,.wallet-box{grid-template-columns:1fr}.signup-form,.journey-preview{padding:20px}.form-head{flex-direction:column}.profile-badge{white-space:normal}.signup-hero{padding-top:50px}}
+
+/* Signup typography polish */
+.signup-hero h1{font-size:clamp(38px,5.2vw,58px);line-height:1.16;font-weight:780;letter-spacing:-.035em}
+.signup-hero p{font-size:15.5px;line-height:1.9}
+.role-tab strong{font-size:15px;font-weight:750}
+.role-tab small{font-size:11px;line-height:1.7}
+.form-kicker{font-size:10.5px}
+.form-head h2{font-size:25px;font-weight:760}
+.form-section-title h3{font-size:17px;font-weight:750}
+.signup-form label>span{font-size:12px;font-weight:700}
+.signup-form input,.signup-form select,.signup-form textarea{font-size:14px;line-height:1.75}
+.check-card b{font-size:12.5px;font-weight:700}
+.check-card small{font-size:10px;line-height:1.7}
+.need-chip span{font-size:11.5px}
+.preview-copy h3{font-size:19px;font-weight:750}
+.preview-copy p{font-size:11.5px;line-height:1.8}
+.verification-card strong{font-size:12.5px}
+.verification-card p{font-size:10px;line-height:1.75}
+@media(max-width:650px){.signup-hero h1{font-size:34px}.signup-hero p{font-size:15px}.form-head h2{font-size:23px}}

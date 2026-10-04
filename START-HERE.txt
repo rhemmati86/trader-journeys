@@ -1,0 +1,11 @@
+TRADER JOURNEYS — SUPABASE SETUP
+
+1) Open supabase-config.js with Notepad.
+2) Replace PASTE_YOUR_SB_PUBLISHABLE_KEY_HERE with your full sb_publishable_... key.
+3) Save the file.
+4) Open signup.html again in Chrome and create a test account.
+5) In Supabase: Authentication -> Users. The test user should appear.
+6) Then check Table Editor -> profiles.
+
+Important: opening local HTML files uses file://. The signup page is configured not to send an invalid redirect URL in that mode.
+Never paste a service_role or secret key into this file.

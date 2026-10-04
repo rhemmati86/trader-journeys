@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ساخت پروفایل در سفرهای یک تریدر؛ انتخاب مسیر خیرین یا فرصت دوباره و ساخت یک هویت یکتا برای ادامه سفر.">
+  <script src="theme.js"></script>
+  <meta name="theme-color" content="#08111f">
+  <title>ساخت پروفایل | سفرهای یک تریدر</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="story-translation.css">
+  <link rel="stylesheet" href="agent.css" /><link rel="stylesheet" href="platform-support.css" />
+</head>
+<body>
+  <header class="site-header trader-header">
+  <div class="container trader-nav">
+    <a class="brand trader-brand" href="index.html" aria-label="سفرهای یک تریدر"><span class="brand-mark trader-brand-mark"><span>↗</span></span><span class="brand-copy"><strong data-nav="brand">سفرهای یک تریدر</strong><small data-nav="tagline">از شکست تا پیروزی · از کمک گرفتن تا کمک کردن</small></span></a>
+    <nav class="trader-main-nav" id="globalNav" aria-label="Main navigation / منوی اصلی">
+      <a href="explore.html" data-nav="explore">کشف سفرها</a><a href="index.html#community" data-nav="community">جامعه</a><a href="index.html#trust" data-nav="trust">اعتماد</a><a href="dashboard.html" data-nav="myJourney">سفر من</a><a href="founder.html" data-nav="founder">بنیانگذار</a><a href="settings.html" data-nav="settings">تنظیمات</a>
+    </nav>
+    
+    <div class="trader-nav-actions"><select id="lang" class="header-language" aria-label="Language / زبان"><option value="fa">FA</option><option value="en">EN</option></select><a class="btn btn-mini btn-primary header-join" href="signup.html" data-nav="join">ورود به جامعه</a><button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="globalNav"><span></span><span></span><span></span><b class="sr-only">Menu</b></button></div>
+  </div>
+  <div class="trader-market-strip" aria-label="Market status / وضعیت بازار">
+    <div class="container trader-market-strip-inner">
+      <span class="market-chip live"><i></i><b>LIVE</b></span>
+      <span class="market-chip">FX</span>
+      <span class="market-chip">CRYPTO</span>
+      <span class="market-chip danger">DRAWDOWN <b>↓</b></span>
+      <span class="market-chip recover">RECOVERY <b>↗</b></span>
+    </div>
+  </div>
+  <div class="mobile-trader-menu" id="mobileTraderMenu"><div class="container"><a href="explore.html" data-nav="explore">کشف سفرها</a><a href="index.html#community" data-nav="community">جامعه</a><a href="index.html#trust" data-nav="trust">اعتماد</a><a href="dashboard.html" data-nav="myJourney">سفر من</a><a href="founder.html" data-nav="founder">بنیانگذار</a><a href="settings.html" data-nav="settings">تنظیمات</a><a href="signup.html" data-nav="join">ورود به جامعه</a></div></div>
+</header>
+
+
+  <main>
+    <section class="signup-hero">
+      <div class="container signup-hero-inner">
+        <span class="eyebrow" data-t="eyebrow">ورود به جامعه</span>
+        <h1 data-t="title">سفر خودت را شروع کن.</h1>
+        <p data-t="lead">یک حساب، یک هویت، یک سفر. نقش امروزت می‌تواند در آینده تغییر کند؛ پروفایلت همراه تو می‌ماند.</p>
+
+        <div class="role-switch" role="tablist" aria-label="User role / نقش کاربر">
+          <button class="role-tab active" data-role="recipient" type="button" role="tab" aria-selected="true">
+            <span class="role-icon">🌱</span>
+            <span><strong data-t="recipient.title">فرصت دوباره</strong><small data-t="recipient.sub">من به حمایت نیاز دارم</small></span>
+          </button>
+          <button class="role-tab" data-role="donor" type="button" role="tab" aria-selected="false">
+            <span class="role-icon">🤝</span>
+            <span><strong data-t="donor.title">خیرین</strong><small data-t="donor.sub">من می‌خواهم کمک کنم</small></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="signup-section">
+      <div class="container signup-grid">
+        <form class="signup-form" id="signupForm">
+          <div class="form-head">
+            <div>
+              <span class="form-kicker" data-t="form.kicker">مرحله ۱ از ۳</span>
+              <h2 id="formTitle" data-t="form.titleRecipient">ساخت پروفایل فرصت دوباره</h2>
+            </div>
+            <span class="profile-badge">ONE PERSON · ONE PROFILE</span>
+          </div>
+
+          <div class="form-section-title"><span>01</span><h3 data-t="identity.heading">معرفی من</h3></div>
+          <div class="field-grid two">
+            <label><span data-t="fields.name">نام یا نام مستعار</span><input name="name" required placeholder="e.g. Alex" data-ph="fields.namePh"></label>
+            <label><span data-t="fields.country">کشور محل زندگی</span><input name="country" placeholder="e.g. Netherlands" data-ph="fields.countryPh"></label>
+          </div>
+          <div class="field-grid two">
+            <label><span data-t="fields.email">ایمیل</span><input name="email" type="email" required placeholder="name@example.com" data-ph="fields.emailPh"></label>
+            <label><span data-t="fields.username">نام کاربری</span><input name="username" required placeholder="e.g. trader_alex" data-ph="fields.usernamePh"></label>
+          </div>
+          <div class="field-grid two">
+            <label><span data-t="fields.password">رمز عبور</span><input name="password" type="password" required minlength="8" placeholder="At least 8 characters" data-ph="fields.passwordPh"></label>
+            <label><span data-t="fields.birth">سال تولد</span><input name="birthYear" inputmode="numeric" placeholder="e.g. 1990" data-ph="fields.birthPh"></label>
+          </div>
+
+          <div class="form-section-title"><span>02</span><h3 data-t="market.heading">سفر من در بازار</h3></div>
+          <div class="check-grid">
+            <label class="check-card"><input type="checkbox" name="market" value="forex"><span><b>FOREX</b><small data-t="market.forex">تجربه در بازار فارکس</small></span></label>
+            <label class="check-card"><input type="checkbox" name="market" value="crypto"><span><b>CRYPTO</b><small data-t="market.crypto">تجربه در بازار کریپتو</small></span></label>
+            <label class="check-card"><input type="checkbox" name="market" value="other"><span><b>OTHER</b><small data-t="market.other">بازارهای مالی دیگر</small></span></label>
+          </div>
+          <label><span data-t="fields.years">چند سال در بازار فعالیت داشته‌ای؟</span><select name="years"><option value="0" data-l10n-fa="انتخاب کنید" data-l10n-en="Choose an option">انتخاب کنید</option><option data-l10n-fa="کمتر از ۱ سال" data-l10n-en="Less than 1 year">کمتر از ۱ سال</option><option data-l10n-fa="۱ تا ۳ سال" data-l10n-en="1–3 years">۱ تا ۳ سال</option><option data-l10n-fa="۳ تا ۵ سال" data-l10n-en="3–5 years">۳ تا ۵ سال</option><option data-l10n-fa="۵ تا ۱۰ سال" data-l10n-en="5–10 years">۵ تا ۱۰ سال</option><option data-l10n-fa="بیش از ۱۰ سال" data-l10n-en="More than 10 years">بیش از ۱۰ سال</option></select></label>
+
+          <div class="form-section-title"><span>03</span><h3 data-t="story.heading">داستان من</h3></div>
+          <label><span data-t="fields.bio">یک معرفی کوتاه</span><textarea name="bio" rows="3" maxlength="300" placeholder="Introduce yourself in a few sentences…" data-ph="fields.bioPh"></textarea></label>
+          <label><span data-t="fields.bioLang">زبان اصلی معرفی کوتاه</span><select name="bioLang"><option value="fa">فارسی</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="tr">Türkçe</option><option value="ar">العربية</option><option value="pt">Português</option><option value="it">Italiano</option><option value="ru">Русский</option></select></label>
+          <label><span data-t="fields.story">داستان سفر تو</span><textarea name="story" rows="8" placeholder="Describe how it began, what you experienced, setbacks, opportunities, and where you are today…" data-ph="fields.storyPh"></textarea></label>
+          <label><span data-t="fields.storyLang">زبان اصلی داستان</span><select name="storyLang"><option value="fa">فارسی</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="tr">Türkçe</option><option value="ar">العربية</option><option value="pt">Português</option><option value="it">Italiano</option><option value="ru">Русский</option></select></label>
+
+          <div class="recipient-only" id="recipientFields">
+            <div class="form-section-title"><span>04</span><h3 data-t="need.heading">الان چه چیزی نیاز داری؟</h3></div>
+            <div class="need-grid">
+              <label class="need-chip"><input type="checkbox" name="need" value="living"><span data-t="needs.living">کمک معیشتی</span></label>
+              <label class="need-chip"><input type="checkbox" name="need" value="housing"><span data-t="needs.housing">مسکن / اجاره</span></label>
+              <label class="need-chip"><input type="checkbox" name="need" value="debt"><span data-t="needs.debt">هزینه ضروری / بدهی</span></label>
+              <label class="need-chip"><input type="checkbox" name="need" value="work"><span data-t="needs.work">کار و مهارت</span></label>
+              <label class="need-chip"><input type="checkbox" name="need" value="other"><span data-t="needs.other">نیاز دیگر</span></label>
+            </div>
+            <label><span data-t="fields.needDetail">توضیح وضعیت فعلی</span><textarea name="needDetail" rows="5" placeholder="Without sharing highly sensitive details, explain your current situation and the support you need…" data-ph="fields.needDetailPh"></textarea></label>
+            <div class="wallet-box">
+              <div><strong data-t="wallet.title">کیف پول دریافت کمک</strong><p data-t="wallet.text">در نسخه نهایی، یک آدرس کیف پول تأییدشده به همین پروفایل متصل می‌شود. کلید خصوصی هرگز از شما درخواست نمی‌شود.</p></div>
+              <input name="wallet" placeholder="0x… or your preferred network address" data-ph="wallet.placeholder" dir="ltr">
+            </div>
+          </div>
+
+          <div class="donor-only" id="donorFields" hidden>
+            <div class="form-section-title"><span>04</span><h3 data-t="donorStory.heading">داستان من به‌عنوان خیر</h3></div>
+            <label><span data-t="fields.donorStory">چرا می‌خواهی کمک کنی؟</span><textarea name="donorStory" rows="5" placeholder="Share your story or motivation with the community…" data-ph="fields.donorStoryPh"></textarea></label>
+            <label><span data-t="fields.donorStoryLang">زبان اصلی داستان خیر</span><select name="donorStoryLang"><option value="fa">فارسی</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="tr">Türkçe</option><option value="ar">العربية</option><option value="pt">Português</option><option value="it">Italiano</option><option value="ru">Русский</option></select></label>
+            <div class="wallet-box">
+              <div><strong data-t="donorWallet.title">کیف پول کمک</strong><p data-t="donorWallet.text">می‌توانی در آینده کیف پول یا روش کمک موردنظرت را به پروفایلت اضافه کنی. نگهداری کلید خصوصی توسط سایت انجام نمی‌شود.</p></div>
+              <input name="donorWallet" placeholder="Wallet address (optional)" data-ph="donorWallet.placeholder" dir="ltr">
+            </div>
+          </div>
+
+          <div class="consent-row">
+            <label class="check-consent"><input type="checkbox" required><span data-t="consent">می‌پذیرم که اطلاعات عمومی پروفایلم را خودم انتخاب کنم و اطلاعات هویتی موردنیاز برای احراز، عمومی نخواهد شد.</span></label>
+            <label class="check-consent"><input type="checkbox" name="publishProfile"><span data-t="publishConsent">می‌خواهم پروفایل و داستانم برای همه قابل مشاهده باشد. (اختیاری)</span></label>
+          </div>
+          <p class="backend-mode-note" id="signupBackendNote" role="status"></p>
+          <p class="form-footnote"><span data-t="existingAccount">قبلاً حساب ساخته‌ای؟</span> <a href="login.html" data-t="signInLink">وارد شو</a></p>
+
+          <button class="btn btn-primary submit-btn" type="submit"><span data-t="submit">ساخت پروفایل و ادامه</span> <span>→</span></button>
+          <p class="form-footnote" data-t="footnote">این نسخه نمایشی است؛ ثبت واقعی حساب و احراز هویت در مرحله بعد به سیستم امن متصل می‌شود.</p>
+        </form>
+
+        <aside class="journey-preview">
+          <div class="preview-head"><span data-t="preview.label">پیش‌نمایش سفر</span><span class="live-chip">PROFILE</span></div>
+          <div class="journey-chart">
+            <div class="chart-label label-start" data-t="journey.start">شروع</div>
+            <div class="chart-label label-draw" data-t="journey.draw">شکست</div>
+            <div class="chart-label label-rec" data-t="journey.rec">فرصت دوباره</div>
+            <div class="chart-label label-win" data-t="journey.win">پیروزی</div>
+            <svg viewBox="0 0 520 360" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="journeyFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#59d9b2" stop-opacity=".28"/><stop offset="1" stop-color="#59d9b2" stop-opacity="0"/></linearGradient>
+              </defs>
+              <path class="preview-area" d="M0 110 C58 88 82 128 124 120 C178 108 194 170 232 215 C278 270 315 276 354 242 C394 209 433 164 520 74 L520 360 L0 360 Z"/>
+              <path class="preview-line" d="M0 110 C58 88 82 128 124 120 C178 108 194 170 232 215 C278 270 315 276 354 242 C394 209 433 164 520 74"/>
+              <circle cx="232" cy="215" r="7" class="preview-dot"/>
+              <circle cx="520" cy="74" r="7" class="preview-dot future"/>
+            </svg>
+          </div>
+          <div class="preview-copy">
+            <h3 data-t="preview.title">یک پروفایل، برای تمام مسیر</h3>
+            <p data-t="preview.text">امروز می‌توانی درخواست حمایت داشته باشی؛ فردا تجربه‌ات را ثبت کنی و روزی خودت به یک حامی تبدیل شوی.</p>
+          </div>
+          <div class="verification-card"><span>✓</span><div><strong data-t="verification.title">هویت یکتا</strong><p data-t="verification.text">هر فرد فقط یک پروفایل اصلی خواهد داشت؛ داستانش می‌تواند بارها به‌روزرسانی شود.</p></div></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div><strong data-t="footer.name">سفرهای یک تریدر</strong><p data-t="footer.text">از شکست تا پیروزی · از کمک گرفتن تا کمک کردن</p></div><small data-t="footer.note">نسخه ثبت‌نام اولیه</small></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="supabase-config.js"></script><script src="backend.js"></script><script src="signup.js"></script><script src="platform-support.js"></script>
+  <script src="agent.js"></script>
+<script src="market-header.js"></script>
+<script src="language-sync.js"></script>
+<div style="text-align:center;margin:18px 0"><a href="supabase-setup.html" style="color:#58d6b0;font-weight:800">تنظیم اتصال Supabase</a></div>
+</body>
+</html>

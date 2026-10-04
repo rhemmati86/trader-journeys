@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="داستان بنیانگذار سفرهای یک تریدر؛ یک سفر واقعی از ورود به بازار تا شکست، بازسازی و آینده‌ای برای کمک به دیگران.">
+  <script src="theme.js"></script>
+  <meta name="theme-color" content="#07101d">
+  <title>بنیانگذار | سفرهای یک تریدر</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="agent.css" />
+<link rel="stylesheet" href="platform-support.css">
+</head>
+<body>
+  <header class="site-header trader-header">
+  <div class="container trader-nav">
+    <a class="brand trader-brand" href="index.html" aria-label="سفرهای یک تریدر"><span class="brand-mark trader-brand-mark"><span>↗</span></span><span class="brand-copy"><strong data-nav="brand">سفرهای یک تریدر</strong><small data-nav="tagline">از شکست تا پیروزی · از کمک گرفتن تا کمک کردن</small></span></a>
+    <nav class="trader-main-nav" id="globalNav" aria-label="Main navigation / منوی اصلی">
+      <a href="explore.html" data-nav="explore">کشف سفرها</a><a href="index.html#community" data-nav="community">جامعه</a><a href="index.html#trust" data-nav="trust">اعتماد</a><a href="dashboard.html" data-nav="myJourney">سفر من</a><a href="founder.html" data-nav="founder">بنیانگذار</a><a href="settings.html" data-nav="settings">تنظیمات</a>
+    </nav>
+    
+    <div class="trader-nav-actions"><select id="lang" class="header-language" aria-label="Language / زبان"><option value="fa">FA</option><option value="en">EN</option></select><a class="btn btn-mini btn-outline header-join" href="signup.html" data-nav="join">ورود به جامعه</a><button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="globalNav"><span></span><span></span><span></span><b class="sr-only">Menu</b></button></div>
+  </div>
+  <div class="trader-market-strip" aria-label="Market status / وضعیت بازار">
+    <div class="container trader-market-strip-inner">
+      <span class="market-chip live"><i></i><b>LIVE</b></span>
+      <span class="market-chip">FX</span>
+      <span class="market-chip">CRYPTO</span>
+      <span class="market-chip danger">DRAWDOWN <b>↓</b></span>
+      <span class="market-chip recover">RECOVERY <b>↗</b></span>
+    </div>
+  </div>
+  <div class="mobile-trader-menu" id="mobileTraderMenu"><div class="container"><a href="explore.html" data-nav="explore">کشف سفرها</a><a href="index.html#community" data-nav="community">جامعه</a><a href="index.html#trust" data-nav="trust">اعتماد</a><a href="dashboard.html" data-nav="myJourney">سفر من</a><a href="founder.html" data-nav="founder">بنیانگذار</a><a href="settings.html" data-nav="settings">تنظیمات</a><a href="signup.html" data-nav="join">ورود به جامعه</a></div></div>
+</header>
+
+
+  <main>
+    <section class="profile-hero">
+      <div class="container profile-hero-grid">
+        <div class="profile-intro">
+          <div class="founder-tag" data-t="founderTag">بنیان‌گذار · اولین سفر ثبت‌شده</div>
+          <div class="profile-heading-row">
+            <div class="large-avatar">ر</div>
+            <div>
+              <div class="profile-id">TR-J001</div>
+              <h1 data-t="name">روح‌الله</h1>
+              <p class="profile-subtitle" data-t="subtitle">یک تریدر، یک داستان، یک سفر که ادامه دارد.</p>
+            </div>
+          </div>
+          <div class="role-row">
+            <span class="role-chip role-active" data-t="role1">در مسیر فرصت دوباره</span>
+            <span class="role-chip" data-t="role2">بنیان‌گذار جامعه</span>
+            <span class="role-chip" data-t="role3">آینده: حامی دیگران</span>
+          </div>
+          <p class="profile-summary" data-t="summary">چند روز پیش ۴۰ ساله شدم. فرزند یک کارگرم و از کودکی کار کرده‌ام. سال‌ها پیش برای ساختن آینده‌ای بهتر وارد بازارهای مالی شدم؛ امروز این صفحه شروع ثبت سفر من از شکست به بازسازی است.</p>
+          <div class="profile-actions">
+            <a class="btn btn-primary" href="#story" data-t="readStory">خواندن داستان</a>
+            <a class="btn btn-ghost" href="#timeline" data-t="viewJourney">مشاهده سفر</a>
+          </div>
+        </div>
+
+        <aside class="journey-visual">
+          <div class="journey-visual-head"><span data-t="chartTitle">نمودار سفر من</span><span>FX · CRYPTO</span></div>
+          <div class="big-chart">
+            <span class="axis-label top">PEAK</span>
+            <span class="axis-label mid">RECOVERY</span>
+            <span class="axis-label low">DRAWDOWN</span>
+            <svg viewBox="0 0 640 260" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="area" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0" stop-color="#59d9b2" stop-opacity=".22"/>
+                  <stop offset="1" stop-color="#59d9b2" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path class="chart-area-fill" d="M0 64 C70 38 110 58 152 50 C206 40 226 76 270 102 C320 132 332 201 388 214 C448 228 482 156 534 138 C575 124 607 88 640 50 L640 260 L0 260 Z"/>
+              <path class="chart-line" d="M0 64 C70 38 110 58 152 50 C206 40 226 76 270 102 C320 132 332 201 388 214 C448 228 482 156 534 138 C575 124 607 88 640 50"/>
+              <circle cx="388" cy="214" r="6" class="chart-dot crash"/>
+              <circle cx="640" cy="50" r="6" class="chart-dot future"/>
+            </svg>
+            <div class="chart-point crash-label"><b data-t="crash">شکست</b><small>2026</small></div>
+            <div class="chart-point future-label"><b data-t="future">آینده</b><small>…</small></div>
+          </div>
+          <div class="visual-note" data-t="chartNote">هدف این نمودار پیش‌بینی سود نیست؛ روایت مسیر زندگی است.</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="profile-main" id="story">
+      <div class="container profile-content-grid">
+        <article class="story-main-card">
+          <div class="section-title"><span class="eyebrow" data-t="storyEyebrow">داستان من</span><h2 data-t="storyTitle">این سفر از فقر شروع شد، نه از سرمایه.</h2></div>
+          <div class="story-body">
+            <p data-t="p1">من چند روز پیش ۴۰ ساله شدم. پسر یک کارگر هستم و از ابتدای کودکی کار کرده‌ام. زندگی برای من از همان اول با تلاش و کمبود شروع شد؛ و شاید به همین دلیل، همیشه آرزو داشتم روزی بتوانم شرایط زندگی‌ام را تغییر بدهم.</p>
+            <p data-t="p2">در دوره کارشناسی ارشد، وقتی ۲۸ ساله بودم، عاشق یک دختر شدم. فقر برای من فقط یک مفهوم اقتصادی نبود؛ بخشی از تصمیم‌های مهم زندگی‌ام بود. آن زمان با خودم فکر کردم شاید بازارهای مالی راهی باشد برای اینکه روزی ثروتمند شوم و آینده متفاوتی بسازم.</p>
+            <p data-t="p3">مدتی در بازار فارکس فعالیت کردم و بعد وارد بازار کریپتو شدم. سال‌هایی از عمر، انرژی، امید و سرمایه‌ام را وارد این مسیر کردم. اما چند تصمیم اشتباه باعث شد بخش بزرگی از دارایی‌ام را از دست بدهم.</p>
+            <p data-t="p4">امروز با بیش از ۳۰ هزار دلار بدهی در نقطه‌ای ایستاده‌ام که آسان نیست. این صفحه برای پنهان کردن شکست من ساخته نشده؛ برای ثبت آن ساخته شده است. می‌خواهم این سفر را همان‌طور که هست روایت کنم: با شکست‌ها، فرصت‌ها، قدم‌های کوچک و هر پیروزی‌ای که در ادامه مسیر به دست بیاورم.</p>
+            <div class="quote-box" data-t="quote">«شاید بازار سرمایه‌ام را از من گرفته باشد، اما نمی‌خواهم اجازه بدهم شکست، آینده‌ام را هم از من بگیرد.»</div>
+          </div>
+        </article>
+
+        <aside class="profile-side-card">
+          <div class="side-head"><span data-t="statusTitle">وضعیت فعلی</span><span class="status-chip" data-t="status">نیازمند فرصت دوباره</span></div>
+          <div class="need-list">
+            <div><span data-t="market">بازارهای تجربه‌شده</span><strong>Forex · Crypto</strong></div>
+            <div><span data-t="age">سن</span><strong>40</strong></div>
+            <div><span data-t="debt">بدهی اعلام‌شده</span><strong>$30K+</strong></div>
+            <div><span data-t="profileType">نوع پروفایل</span><strong data-t="founderProfile">بنیان‌گذار</strong></div>
+          </div>
+          <div class="privacy-note" data-t="privacy">اطلاعات هویتی حساس و مدارک مالی در این نسخه عمومی نمایش داده نمی‌شوند و در معماری آینده جداگانه مدیریت خواهند شد.</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="timeline-section" id="timeline">
+      <div class="container">
+        <div class="section-title centered"><span class="eyebrow" data-t="timelineEyebrow">سفر من</span><h2 data-t="timelineTitle">یک مسیر زنده، نه یک برچسب ثابت</h2><p data-t="timelineLead">این خط زمانی با هر تجربه جدید قابل به‌روزرسانی است.</p></div>
+        <div class="timeline-chart-wrap">
+          <div class="timeline-spine"></div>
+          <div class="timeline-item"><div class="time-dot positive"></div><div><span>—</span><h3 data-t="t1">کودکی · شروع کار</h3><p data-t="t1p">از همان ابتدای کودکی کار کردم و خیلی زود با مفهوم تلاش برای ساختن آینده آشنا شدم.</p></div></div>
+          <div class="timeline-item"><div class="time-dot positive"></div><div><span>28</span><h3 data-t="t2">دوره کارشناسی ارشد · رویای تغییر زندگی</h3><p data-t="t2p">با وجود محدودیت‌های مالی، تصمیم گرفتم وارد بازارهای مالی شوم و مسیر تازه‌ای را امتحان کنم.</p></div></div>
+          <div class="timeline-item"><div class="time-dot market"></div><div><span>—</span><h3 data-t="t3">فارکس → کریپتو · سال‌های بازار</h3><p data-t="t3p">بخش مهمی از زمان و انرژی‌ام را به یادگیری و فعالیت در بازار اختصاص دادم.</p></div></div>
+          <div class="timeline-item danger"><div class="time-dot danger"></div><div><span>2026</span><h3 data-t="t4">شکست بزرگ · از دست دادن دارایی</h3><p data-t="t4p">چند تصمیم اشتباه باعث شد بخش بزرگی از دارایی‌ام از بین برود و با بدهی سنگین روبه‌رو شوم.</p></div></div>
+          <div class="timeline-item recovery"><div class="time-dot recovery"></div><div><span>NOW</span><h3 data-t="t5">فرصت دوباره · شروع ثبت این سفر</h3><p data-t="t5p">اینجا جایی است که می‌خواهم مسیر بازسازی را ثبت کنم؛ قدم‌به‌قدم، بدون پنهان کردن شکست.</p></div></div>
+          <div class="timeline-item future"><div class="time-dot future"></div><div><span>FUTURE</span><h3 data-t="t6">کمک به دیگران · روزی که سفرم تغییر کند</h3><p data-t="t6p">هدف نهایی این است که اگر روزی ایستادم، همان پروفایل را به حامی شدن برای یک انسان دیگر تبدیل کنم.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="future-role">
+      <div class="container future-role-box">
+        <div><span class="eyebrow" data-t="futureEyebrow">نقش من می‌تواند تغییر کند</span><h2 data-t="futureTitle">امروز کمک می‌گیرم؛ فردا شاید کمک‌کننده باشم.</h2><p data-t="futureText">در «سفرهای یک تریدر»، پایان داستان یک نقش ثابت نیست. اگر شرایط زندگی من بهتر شود، می‌توانم بدون ساختن حساب جدید، همین پروفایل را به مسیر حمایت از دیگران ادامه بدهم.</p></div>
+        <div class="role-flow"><span class="flow-active" data-t="flow1">فرصت دوباره</span><i>→</i><span data-t="flow2">بازسازی</span><i>→</i><span data-t="flow3">پیروزی</span><i>→</i><span class="flow-give" data-t="flow4">خیر</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-grid"><div><strong data-t="brand">سفرهای یک تریدر</strong><small data-t="tagline">از شکست تا پیروزی · از کمک گرفتن تا کمک کردن</small></div><div><small data-t="footerNote">اولین پروفایل نمونه · قابل به‌روزرسانی در نسخه‌های آینده</small></div></div></footer>
+  <script src="profile.js"></script>
+  <script src="agent.js"></script>
+<script src="market-header.js"></script>
+<script src="language-sync.js"></script>
+<script src="platform-support.js"></script>
+</body>
+</html>

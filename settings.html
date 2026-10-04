@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="تنظیمات ظاهری سفرهای یک تریدر؛ انتخاب حالت روشن یا تاریک و رنگ‌بندی سایت." data-description-fa="تنظیمات ظاهری سفرهای یک تریدر؛ انتخاب حالت روشن یا تاریک و رنگ‌بندی سایت." data-description-en="Trader Journeys appearance settings: choose light or dark mode and customize the site accent color.">
+  <meta name="theme-color" content="#07101d">
+  <script src="theme.js"></script>
+  <title>تنظیمات | سفرهای یک تریدر</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="settings.css">
+  <link rel="stylesheet" href="agent.css">
+<link rel="stylesheet" href="platform-support.css">
+</head>
+<body>
+  <header class="site-header trader-header">
+  <div class="container trader-nav">
+    <a class="brand trader-brand" href="index.html" aria-label="سفرهای یک تریدر"><span class="brand-mark trader-brand-mark"><span>↗</span></span><span class="brand-copy"><strong data-nav="brand">سفرهای یک تریدر</strong><small data-nav="tagline">از شکست تا پیروزی · از کمک گرفتن تا کمک کردن</small></span></a>
+    <nav class="trader-main-nav" id="globalNav" aria-label="Main navigation / منوی اصلی">
+      <a href="explore.html" data-nav="explore">کشف سفرها</a><a href="index.html#community" data-nav="community">جامعه</a><a href="index.html#trust" data-nav="trust">اعتماد</a><a href="dashboard.html" data-nav="myJourney">سفر من</a><a href="founder.html" data-nav="founder">بنیانگذار</a><a href="settings.html" data-nav="settings">تنظیمات</a>
+    </nav>
+    
+    <div class="trader-nav-actions"><select id="lang" class="header-language" aria-label="Language / زبان"><option value="fa">FA</option><option value="en">EN</option></select><a class="btn btn-mini btn-primary header-join" href="signup.html" data-nav="join">ورود به جامعه</a><button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="globalNav"><span></span><span></span><span></span><b class="sr-only">Menu</b></button></div>
+  </div>
+  <div class="trader-market-strip" aria-label="Market status / وضعیت بازار">
+    <div class="container trader-market-strip-inner">
+      <span class="market-chip live"><i></i><b>LIVE</b></span>
+      <span class="market-chip">FX</span>
+      <span class="market-chip">CRYPTO</span>
+      <span class="market-chip danger">DRAWDOWN <b>↓</b></span>
+      <span class="market-chip recover">RECOVERY <b>↗</b></span>
+    </div>
+  </div>
+  <div class="mobile-trader-menu" id="mobileTraderMenu"><div class="container"><a href="explore.html" data-nav="explore">کشف سفرها</a><a href="index.html#community" data-nav="community">جامعه</a><a href="index.html#trust" data-nav="trust">اعتماد</a><a href="dashboard.html" data-nav="myJourney">سفر من</a><a href="founder.html" data-nav="founder">بنیانگذار</a><a href="settings.html" data-nav="settings">تنظیمات</a><a href="signup.html" data-nav="join">ورود به جامعه</a></div></div>
+</header>
+
+
+  <main>
+    <section class="settings-page">
+      <div class="container settings-layout">
+        <div class="settings-card">
+          <div class="settings-head">
+            <span class="eyebrow" id="eyebrow">PREFERENCES</span>
+            <h1 id="title">تنظیمات ظاهر سایت</h1>
+            <p id="lead">رنگ و حالت نمایش «سفرهای یک تریدر» را خودت انتخاب کن. انتخاب تو روی همین مرورگر ذخیره می‌شود.</p>
+          </div>
+
+          <div class="setting-group">
+            <h2 id="modeTitle">حالت نمایش</h2>
+            <p id="modeLead">تجربه‌ای را انتخاب کن که برایت راحت‌تر است.</p>
+            <div class="option-grid mode-grid">
+              <button class="option-button" data-setting-mode="dark"><span class="mode-preview mode-dark"></span><strong id="darkLabel">دارک مود</strong><small id="darkSub">حالت پیش‌فرض</small></button>
+              <button class="option-button" data-setting-mode="light"><span class="mode-preview mode-light"></span><strong id="lightLabel">روشن</strong><small id="lightSub">زمینه روشن</small></button>
+              <button class="option-button" data-setting-mode="system"><span class="mode-preview mode-system"></span><strong id="systemLabel">هماهنگ با سیستم</strong><small id="systemSub">بر اساس تنظیمات دستگاه</small></button>
+            </div>
+          </div>
+
+          <div class="setting-group">
+            <h2 id="colorTitle">رنگ‌بندی</h2>
+            <p id="colorLead">یک رنگ اصلی برای عناصر تعاملی، نمودارهای سفر و جزئیات رابط انتخاب کن.</p>
+            <div class="option-grid">
+              <button class="option-button" data-setting-color="emerald"><span class="swatch swatch-emerald"></span><strong>Emerald</strong><small id="emeraldSub">سبز بازار / بازگشت</small></button>
+              <button class="option-button" data-setting-color="blue"><span class="swatch swatch-blue"></span><strong>Blue</strong><small id="blueSub">آبی فین‌تک</small></button>
+              <button class="option-button" data-setting-color="purple"><span class="swatch swatch-purple"></span><strong>Purple</strong><small id="purpleSub">بنفش مدرن</small></button>
+              <button class="option-button" data-setting-color="amber"><span class="swatch swatch-amber"></span><strong>Amber</strong><small id="amberSub">طلایی / اعتماد</small></button>
+              <button class="option-button" data-setting-color="rose"><span class="swatch swatch-rose"></span><strong>Rose</strong><small id="roseSub">رز / انرژی</small></button>
+            </div>
+            <div class="custom-color-card">
+              <div class="custom-color-head">
+                <div>
+                  <strong id="customColorTitle">طیف رنگی دلخواه</strong>
+                  <p id="customColorLead">رنگ مورد علاقه‌ات را انتخاب کن تا رنگ اصلی کل سایت با همان طیف تنظیم شود.</p>
+                </div>
+                <span class="custom-color-value" id="customColorValue">#6DF0C8</span>
+              </div>
+              <div class="spectrum-picker" aria-label="انتخاب طیف رنگی">
+                <div class="spectrum-bar"></div>
+                <input id="customColor" type="color" value="#6df0c8" aria-label="رنگ دلخواه">
+              </div>
+              <div class="custom-color-row">
+                <span id="customColorHint">برای انتخاب هر رنگ، روی مربع رنگی بزن.</span>
+                <button type="button" class="btn btn-mini btn-outline" id="resetColor">بازنشانی</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="settings-actions">
+            <a class="btn btn-primary" href="index.html" id="done">ذخیره و ادامه</a>
+            <span id="settingsStatus" class="settings-note" aria-live="polite"></span>
+          </div>
+        </div>
+
+        <aside class="settings-aside">
+          <div class="eyebrow" id="previewLabel">LIVE PREVIEW</div>
+          <div class="preview-window">
+            <div class="preview-top"><i></i><i></i><i></i></div>
+            <div class="preview-chart">
+              <svg viewBox="0 0 280 110" preserveAspectRatio="none"><path d="M0,66 C30,56 40,74 64,61 S103,54 125,76 S160,96 188,74 S225,52 280,28" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+            </div>
+            <div class="preview-text"><strong id="previewTitle">سفر من</strong><span id="previewSub">شکست → بازسازی → پیروزی</span></div>
+          </div>
+          <p class="settings-note" id="privacyNote">این تنظیمات فقط برای ظاهر سایت هستند و به اطلاعات هویتی یا داستان سفر تو دست نمی‌زنند.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const dict={
+      fa:{back:'← بازگشت به خانه',profile:'ساخت پروفایل',note:'ظاهر سایت را برای خودت انتخاب کن',eyebrow:'PREFERENCES',title:'تنظیمات ظاهر سایت',lead:'رنگ و حالت نمایش «سفرهای یک تریدر» را خودت انتخاب کن. انتخاب تو روی همین مرورگر ذخیره می‌شود.',mode:'حالت نمایش',modeLead:'تجربه‌ای را انتخاب کن که برایت راحت‌تر است.',dark:'دارک مود',darkSub:'حالت پیش‌فرض',light:'روشن',lightSub:'زمینه روشن',system:'هماهنگ با سیستم',systemSub:'بر اساس تنظیمات دستگاه',color:'رنگ‌بندی',colorLead:'یک رنگ اصلی برای عناصر تعاملی، نمودارهای سفر و جزئیات رابط انتخاب کن.',emerald:'سبز بازار / بازگشت',blue:'آبی فین‌تک',purple:'بنفش مدرن',amber:'طلایی / اعتماد',rose:'رز / انرژی',customTitle:'طیف رنگی دلخواه',customLead:'رنگ مورد علاقه‌ات را انتخاب کن تا رنگ اصلی کل سایت با همان طیف تنظیم شود.',customHint:'برای انتخاب هر رنگ، روی مربع رنگی بزن.',resetColor:'بازنشانی',preview:'LIVE PREVIEW',previewTitle:'سفر من',previewSub:'شکست → بازسازی → پیروزی',privacy:'این تنظیمات فقط برای ظاهر سایت هستند و به اطلاعات هویتی یا داستان سفر تو دست نمی‌زنند.',done:'ذخیره و ادامه'},
+      en:{back:'← Back home',profile:'Create profile',note:'Choose your visual experience',eyebrow:'PREFERENCES',title:'Appearance settings',lead:'Choose the visual mode and color palette for Trader Journeys. Your choice is saved in this browser.',mode:'Display mode',modeLead:'Pick the experience that feels best for you.',dark:'Dark mode',darkSub:'Default experience',light:'Light',lightSub:'Light background',system:'System',systemSub:'Follow your device',color:'Color theme',colorLead:'Choose the main accent used for interactive elements, journey charts, and interface details.',emerald:'Market green / recovery',blue:'Fintech blue',purple:'Modern purple',amber:'Gold / trust',rose:'Rose / energy',customTitle:'Custom color spectrum',customLead:'Choose any color you like and use it as the main accent across the site.',customHint:'Click the color square to choose any color.',resetColor:'Reset',preview:'LIVE PREVIEW',previewTitle:'My Journey',previewSub:'Failure → Rebuild → Victory',privacy:'These settings only control appearance; they do not change your identity or journey data.',done:'Save and continue'}
+    };
+    function langSet(l){
+      const d=dict[l]; document.documentElement.lang=l; document.documentElement.dir=l==='fa'?'rtl':'ltr'; localStorage.setItem('tj-lang',l);
+      for(const [id,key] of [['customColorTitle','customTitle'],['customColorLead','customLead'],['customColorHint','customHint'],['resetColor','resetColor'],['backHome','back'],['profileLink','profile'],['tapeNote','note'],['eyebrow','eyebrow'],['title','title'],['lead','lead'],['modeTitle','mode'],['modeLead','modeLead'],['darkLabel','dark'],['darkSub','darkSub'],['lightLabel','light'],['lightSub','lightSub'],['systemLabel','system'],['systemSub','systemSub'],['colorTitle','color'],['colorLead','colorLead'],['emeraldSub','emerald'],['blueSub','blue'],['purpleSub','purple'],['amberSub','amber'],['roseSub','rose'],['previewLabel','preview'],['previewTitle','previewTitle'],['previewSub','previewSub'],['privacyNote','privacy'],['done','done']]){const el=document.getElementById(id);if(el)el.textContent=d[key]}
+      document.title=l==='fa'?'تنظیمات | سفرهای یک تریدر':'Settings | Trader Journeys'; updateActive();
+    }
+    function updateActive(){const s=TJTheme.read();document.querySelectorAll('[data-setting-mode]').forEach(b=>b.classList.toggle('active',b.dataset.settingMode===s.mode));document.querySelectorAll('[data-setting-color]').forEach(b=>b.classList.toggle('active',b.dataset.settingColor===s.color));}
+    document.getElementById('lang').addEventListener('change',e=>langSet(e.target.value));
+    langSet(localStorage.getItem('tj-lang')||localStorage.getItem('site-language')||'fa');
+  </script>
+  <script src="settings.js"></script>
+  <script src="agent.js"></script>
+<script src="market-header.js"></script>
+<script src="language-sync.js"></script>
+<script src="platform-support.js"></script>
+</body>
+</html>

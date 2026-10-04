@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="سفرهای یک تریدر؛ جایی برای روایت سفر واقعی تریدرها از ورود به بازار تا شکست، بازسازی، پیروزی و کمک به دیگران.">
+  <meta name="theme-color" content="#07111f">
+  <script src="theme.js"></script>
+  <title>سفرهای یک تریدر | داستانی که ادامه دارد</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="agent.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="platform-support.css">
+</head>
+<body class="journeys-home">
+  <header class="site-header trader-header">
+  <div class="container trader-nav">
+    <a class="brand trader-brand" href="index.html" aria-label="سفرهای یک تریدر">
+      <span class="brand-mark trader-brand-mark"><span>↗</span></span>
+      <span class="brand-copy"><strong data-nav="brand">سفرهای یک تریدر</strong><small data-nav="tagline">از شکست تا پیروزی · از کمک گرفتن تا کمک کردن</small></span>
+    </a>
+    <nav class="trader-main-nav" id="globalNav" aria-label="Main navigation / منوی اصلی">
+      <a href="explore.html" data-nav="explore">کشف سفرها</a>
+      <a href="index.html#community" data-nav="community">جامعه</a>
+      <a href="index.html#trust" data-nav="trust">اعتماد</a>
+      <a href="dashboard.html" data-nav="myJourney">سفر من</a><a href="founder.html" data-nav="founder">بنیانگذار</a>
+      <a href="settings.html" data-nav="settings">تنظیمات</a>
+    </nav>
+    
+    <div class="trader-nav-actions">
+      <select id="homeLang" class="header-language" aria-label="Language / زبان"><option value="fa">FA</option><option value="en">EN</option></select>
+      <a class="btn btn-mini btn-primary header-join" href="signup.html" data-nav="join">ورود به جامعه</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="globalNav"><span></span><span></span><span></span><b class="sr-only">Menu</b></button>
+    </div>
+  </div>
+  <div class="trader-market-strip" aria-label="Market status / وضعیت بازار">
+    <div class="container trader-market-strip-inner">
+      <span class="market-chip live"><i></i><b>LIVE</b></span>
+      <span class="market-chip">FX</span>
+      <span class="market-chip">CRYPTO</span>
+      <span class="market-chip danger">DRAWDOWN <b>↓</b></span>
+      <span class="market-chip recover">RECOVERY <b>↗</b></span>
+    </div>
+  </div>
+  <div class="mobile-trader-menu" id="mobileTraderMenu">
+    <div class="container">
+      <a href="explore.html" data-nav="explore">کشف سفرها</a>
+      <a href="index.html#community" data-nav="community">جامعه</a>
+      <a href="index.html#trust" data-nav="trust">اعتماد</a>
+      <a href="dashboard.html" data-nav="myJourney">سفر من</a><a href="founder.html" data-nav="founder">بنیانگذار</a>
+      <a href="settings.html" data-nav="settings">تنظیمات</a>
+      <a href="signup.html" data-nav="join">ورود به جامعه</a>
+    </div>
+  </div>
+</header>
+
+
+  <main>
+    <section class="home-hero" id="top">
+      <div class="container home-hero-grid">
+        <div class="hero-intro">
+          <div class="hero-market-kicker"><span class="terminal-live"></span><span data-h="hero.eyebrow">جامعه‌ای زنده از سفرهای تریدرها</span><b>JOURNEY INDEX</b></div>
+          <h1><span data-h="hero.title1">یک شکست،</span> <span class="accent-line" data-h="hero.title2">پایان داستان نیست.</span></h1>
+          <p class="hero-lead" data-h="hero.lead">سفرهای یک تریدر جایی است که هر انسان می‌تواند مسیر واقعی خودش را روایت کند؛ از اولین معامله تا سخت‌ترین سقوط، از فرصت دوباره تا روزی که خودش حامی دیگری می‌شود.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="explore.html" data-h="hero.ctaExplore">سفرها را کشف کن</a>
+            <a class="btn btn-ghost" href="signup.html" data-h="hero.ctaJoin">سفر خودت را شروع کن</a>
+          </div>
+          <div class="hero-proof">
+            <span><b>1</b><small data-h="hero.proof1">انسان</small></span>
+            <span><b>1</b><small data-h="hero.proof2">پروفایل</small></span>
+            <span><b>∞</b><small data-h="hero.proof3">سفرِ ادامه‌دار</small></span>
+          </div>
+          <div class="hero-market-note"><span>↳</span><span data-h="hero.note">این نمودار پیش‌بینی بازار نیست؛ نقشه‌ای از مسیر زندگی یک تریدر است.</span></div>
+        </div>
+
+        <div class="hero-terminal">
+          <div class="terminal-head">
+            <div><span class="terminal-live"></span><strong data-h="terminal.title">LIVE JOURNEY</strong></div>
+            <span data-h="terminal.sample">نمونه نمایشی</span>
+          </div>
+          <div class="terminal-chart">
+            <div class="terminal-y y1">PEAK</div><div class="terminal-y y2">BREAK-EVEN</div><div class="terminal-y y3">DRAWDOWN</div>
+            <svg viewBox="0 0 620 250" preserveAspectRatio="none" aria-hidden="true">
+              <defs><linearGradient id="journeyFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="currentColor" stop-opacity=".18"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></linearGradient></defs>
+              <path d="M0 48 C58 30, 96 62, 140 45 S205 66, 245 92 S292 172, 344 188 S415 148, 462 120 S520 88, 620 34 L620 250 L0 250 Z" fill="url(#journeyFill)" opacity=".7"/>
+              <path d="M0 48 C58 30, 96 62, 140 45 S205 66, 245 92 S292 172, 344 188 S415 148, 462 120 S520 88, 620 34" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="344" cy="188" r="7" fill="currentColor"/><circle cx="620" cy="34" r="7" fill="currentColor"/>
+            </svg>
+            <div class="chart-node node-start"><i></i><span data-h="terminal.start">شروع</span></div>
+            <div class="chart-node node-drop"><i></i><span data-h="terminal.drop">شکست</span></div>
+            <div class="chart-node node-recover"><i></i><span data-h="terminal.recover">فرصت دوباره</span></div>
+            <div class="chart-node node-win"><i></i><span data-h="terminal.win">پیروزی</span></div>
+          </div>
+          <div class="terminal-foot">
+            <div><span data-h="terminal.stage">مرحله فعلی</span><strong data-h="terminal.stageValue">بازسازی</strong></div>
+            <div><span data-h="terminal.next">قدم بعد</span><strong data-h="terminal.nextValue">پیروزی</strong></div>
+            <a href="profile.html" class="terminal-link" data-h="terminal.view">دیدن سفر →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker-story" aria-label="Community updates">
+      <div class="container ticker-story-inner">
+        <span class="ticker-label" data-h="ticker.label">امروز در جامعه</span>
+        <div class="ticker-items" id="tickerItems"></div>
+      </div>
+    </section>
+
+    <section class="journey-intro" id="community">
+      <div class="container intro-grid">
+        <div>
+          <span class="eyebrow" data-h="intro.eyebrow">THE JOURNEY IS THE PRODUCT</span>
+          <h2 data-h="intro.title">اینجا قرار نیست فقط نتیجه را ببینی؛ مسیر را می‌بینی.</h2>
+        </div>
+        <div>
+          <p data-h="intro.text1">هر پروفایل یک سفر زنده است. شکست‌ها و پیروزی‌ها کنار هم می‌مانند و داستان در طول زمان تغییر می‌کند.</p>
+          <p data-h="intro.text2">ممکن است یک نفر امروز کمک بگیرد و روزی خودش تبدیل به حامی فرد دیگری شود.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-journeys" id="explore">
+      <div class="container">
+        <div class="section-heading-row">
+          <div>
+            <span class="eyebrow" data-h="explore.eyebrow">EXPLORE REAL JOURNEYS</span>
+            <h2 data-h="explore.title">سفرها را کشف کن</h2>
+          </div>
+          <p data-h="explore.lead">از یک داستان وارد داستان بعدی شو؛ درست مثل خواندن یک بازار زنده، اما این بار درباره آدم‌ها.</p>
+        </div>
+
+        <div class="filter-bar" role="tablist" aria-label="Journey filters">
+          <button class="filter active" data-filter="all" data-h="filter.all">همه سفرها</button>
+          <button class="filter" data-filter="drawdown" data-h="filter.drawdown">شکست</button>
+          <button class="filter" data-filter="rebuilding" data-h="filter.rebuilding">بازسازی</button>
+          <button class="filter" data-filter="victory" data-h="filter.victory">پیروزی</button>
+          <button class="filter" data-filter="giving" data-h="filter.giving">کمک به دیگران</button>
+        </div>
+
+        <div class="journey-feed" id="journeyFeed"></div>
+        <div class="feed-footer">
+          <button class="load-more" id="loadMore" data-h="explore.more">سفرهای بیشتری ببین</button>
+          <span class="feed-note" data-h="explore.note">نمونه‌های این نسخه برای نمایش رابط کاربری هستند.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="pathways">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow" data-h="paths.eyebrow">ONE COMMUNITY · TWO DIRECTIONS</span>
+          <h2 data-h="paths.title">امروز کجای این سفر هستی؟</h2>
+          <p data-h="paths.lead">نقش‌ها ثابت نیستند. مهم این است که سفر ادامه پیدا کند.</p>
+        </div>
+        <div class="pathway-grid">
+          <a class="pathway-card support-path" href="explore.html">
+            <div class="pathway-chart upward" aria-hidden="true"><svg viewBox="0 0 360 125" preserveAspectRatio="none"><path d="M0 94 C38 85, 70 98, 105 76 S168 82, 205 54 S268 64, 360 18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></div>
+            <div class="pathway-body"><span class="eyebrow" data-h="support.kicker">DONORS & SUPPORTERS</span><h3 data-h="support.title">من می‌خواهم کمک کنم.</h3><p data-h="support.text">سفرها را بخوان، با انسان پشت آن آشنا شو و در صورت تمایل مستقیماً از او حمایت کن.</p><span class="pathway-link" data-h="support.cta">دیدن سفرهای نیازمند حمایت →</span></div>
+          </a>
+          <a class="pathway-card chance-path" href="signup.html">
+            <div class="pathway-chart recover" aria-hidden="true"><svg viewBox="0 0 360 125" preserveAspectRatio="none"><path d="M0 18 C45 32, 62 28, 100 58 S160 106, 203 91 S248 54, 286 42 S326 30, 360 14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></div>
+            <div class="pathway-body"><span class="eyebrow" data-h="chance.kicker">SECOND CHANCE</span><h3 data-h="chance.title">من به فرصت دوباره نیاز دارم.</h3><p data-h="chance.text">یک پروفایل بساز، داستانت را بگو و اجازه بده سفر تو از شکست عبور کند و ادامه پیدا کند.</p><span class="pathway-link" data-h="chance.cta">شروع سفر من →</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="journey-anatomy">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow" data-h="anatomy.eyebrow">ONE PROFILE · MANY CHAPTERS</span>
+          <h2 data-h="anatomy.title">سفر از چه چیزهایی ساخته می‌شود؟</h2>
+          <p data-h="anatomy.lead">در اینجا موفقیت فقط یک عدد نیست. هر فصل بخشی از داستان انسان است.</p>
+        </div>
+        <div class="anatomy-grid">
+          <article><span class="anatomy-icon">↘</span><strong data-h="anatomy.a1">شکست‌ها</strong><p data-h="anatomy.p1">اشتباه‌ها، سقوط‌ها و چیزهایی که از دست رفته‌اند.</p></article>
+          <article><span class="anatomy-icon">◎</span><strong data-h="anatomy.a2">تجربه‌ها</strong><p data-h="anatomy.p2">چیزهایی که فرد از بازار و زندگی یاد گرفته است.</p></article>
+          <article><span class="anatomy-icon">↗</span><strong data-h="anatomy.a3">فرصت‌ها</strong><p data-h="anatomy.p3">نقطه‌هایی که مسیر دوباره باز می‌شود.</p></article>
+          <article><span class="anatomy-icon">⌁</span><strong data-h="anatomy.a4">پیروزی‌ها</strong><p data-h="anatomy.p4">پیشرفت‌های کوچک و بزرگ، نه فقط سود مالی.</p></article>
+          <article><span class="anatomy-icon">♡</span><strong data-h="anatomy.a5">کمک کردن</strong><p data-h="anatomy.p5">روزی که دریافت‌کننده به حامی تبدیل می‌شود.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="founder-strip">
+      <div class="container founder-strip-card">
+        <div class="founder-portrait"><span>RJ</span><i></i></div>
+        <div class="founder-copy"><span class="eyebrow" data-h="founder.eyebrow">THE FIRST JOURNEY</span><h2 data-h="founder.title">اولین سفر، از داستان بنیانگذار شروع شد.</h2><p data-h="founder.text">«چرا برای ما جایی وجود ندارد؟» همین سؤال نقطه شروع سفرهای یک تریدر شد.</p></div>
+        <a class="btn btn-outline" href="founder.html" data-h="founder.cta">خواندن داستان بنیانگذار</a>
+      </div>
+    </section>
+
+    <section class="trust-modern" id="trust">
+      <div class="container">
+        <div class="section-heading-row trust-heading">
+          <div><span class="eyebrow" data-h="trust.eyebrow">TRUST IS A JOURNEY TOO</span><h2 data-h="trust.title">اعتماد با یک تیک ساخته نمی‌شود.</h2></div>
+          <p data-h="trust.lead">هویت، داستان، کمک و انسان؛ چهار ستون طراحی هستند که قرار است با رشد جامعه عمیق‌تر شوند.</p>
+        </div>
+        <div class="trust-modern-grid">
+          <article class="trust-modern-card"><div class="tm-icon id">✦</div><div><h3 data-h="trust.id">هویت</h3><p data-h="trust.idp">یک انسان، یک پروفایل اصلی و یک سفر.</p></div></article>
+          <article class="trust-modern-card"><div class="tm-icon story">≋</div><div><h3 data-h="trust.story">داستان</h3><p data-h="trust.storyp">روایتی که می‌تواند در طول زمان به‌روز شود.</p></div></article>
+          <article class="trust-modern-card"><div class="tm-icon help">↗</div><div><h3 data-h="trust.help">کمک</h3><p data-h="trust.helpp">مسیر حمایتی شفاف و قابل پیگیری.</p></div></article>
+          <article class="trust-modern-card"><div class="tm-icon human">♡</div><div><h3 data-h="trust.human">انسان</h3><p data-h="trust.humanp">پشت هر نمودار، یک زندگی واقعی وجود دارد.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-cta">
+      <div class="container closing-card">
+        <div><span class="eyebrow" data-h="closing.eyebrow">THE STORY CONTINUES</span><h2 data-h="closing.title">سفر خودت را شروع کن.</h2><p data-h="closing.text">یک پروفایل بساز و اجازه بده داستانت فقط به یک نقطه از زندگی محدود نماند.</p></div>
+        <div class="hero-actions"><a class="btn btn-primary" href="signup.html" data-h="closing.join">ساخت پروفایل</a><a class="btn btn-outline" href="explore.html" data-h="closing.browse">کشف سفرها</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer home-footer"><div class="container footer-grid"><div><strong>سفرهای یک تریدر</strong><small data-h="footer.tagline">از شکست تا پیروزی · از کمک گرفتن تا کمک کردن</small></div><div><small data-h="footer.note">نسخه مفهومی · ساخته‌شده برای رشد یک جامعه جهانی</small></div></div></footer>
+
+  
+  <script src="home.js"></script>
+  <script src="agent.js"></script>
+<script src="market-header.js"></script>
+<script src="language-sync.js"></script>
+<script src="platform-support.js"></script>
+</body>
+</html>
